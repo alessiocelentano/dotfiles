@@ -30,10 +30,10 @@ bindsym Mod4+h split h
 bindsym Mod4+v split v
 
 # Workspaces
-set $ws1 "1: Browser"
+set $ws1 "1: Code"
 set $ws2 "2: Telegram"
-set $ws3 "3: Spotify"
-set $ws4 "4: Code"
+set $ws3 "3: Browser"
+set $ws4 "4: Spotify"
 set $ws5 "5: Code"
 set $ws6 "6: Code"
 set $ws7 "7: Code"
@@ -74,15 +74,15 @@ bindsym Mod4+Shift+r restart
 # Resize
 bindsym Mod4+r mode "resize"
 mode "resize" {
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 pxrrr or 10 ppt
+        bindsym $left       resize shrink width 1 px or 1 ppt
+        bindsym $down       resize grow height 1 px or 1 ppt
+        bindsym $up         resize shrink height 1 px or 1 ppt
+        bindsym $right      resize grow width 1 px or 1 ppt
 
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 1 px or 1 ppt
+        bindsym Down        resize grow height 1 px or 1 ppt
+        bindsym Up          resize shrink height 1 px or 1 ppt
+        bindsym Right       resize grow width 1 px or 1 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -98,26 +98,29 @@ bindsym Mod4+Shift+space floating toggle
 
 # /////----- MY SETTINGS -----\\\\\
 
-# Desktop Background
-exec feh --bg-scale ~/Pictures/flat-landscape-deer-lake-sunlight-dawn-sunset-landscape-33500.jpeg
-
 # Font for window titles
 font pango:Hermit 12
 
 # Gaps
 for_window [class="^.*"] border pixel 0
 for_window [title="^.*"] border pixel 0
-gaps inner 35
-gaps outer 25
-gaps horizontal 35
-gaps vertical 35
-gaps top 35
-gaps right 35
-gaps bottom 35
-gaps left 35
+gaps inner 20
+gaps outer 20
+gaps horizontal 20
+gaps vertical 20
+gaps top 30
+gaps right 30
+gaps bottom 30
+gaps left 30
 
 # Set border radius
 border_radius 10
+
+# Desktop Background
+exec feh --bg-scale ~/Pictures/neon-city-wallpaper.jpg
+
+# Rofi
+bindsym Mod4+z exec rofi -show run
 
 # Scratchpad
 bindsym Mod4+Shift+minus move scratchpad
@@ -126,11 +129,11 @@ bindsym Mod4+minus scratchpad show
 # Run picom
 exec_always --no-startup-id $HOME/.config/picom/picom.conf -b
 
+# Kill all panel
+exec_always killall xfce4-panel
+
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-# No focus for new windows
-no_focus [window_type="normal"]
 
 
 # /////----- MY SHORTCUT -----\\\\\
@@ -147,11 +150,14 @@ bindsym Mod4+s exec spotify
 # VSCode
 bindsym Mod4+c exec code
 
-# Firefox
-bindsym Mod4+f exec firefox
+# Chromium
+bindsym Mod4+b exec chromium
 
 # Screenshot
 bindsym --release Print exec xfce4-screenshooter
+
+# Screen record
+bindsym --release Shift+Print exec deepin-screen-recorder
 
 # Media volume controls
 bindsym XF86AudioMute exec amixer sset 'Master' toggle
@@ -164,3 +170,6 @@ bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# Load Layout
+bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec chromium; exec code; exec telegram-desktop; exec xfce4-terminal
