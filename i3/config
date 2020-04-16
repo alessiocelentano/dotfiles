@@ -30,16 +30,16 @@ bindsym Mod4+h split h
 bindsym Mod4+v split v
 
 # Workspaces
-set $ws1 "1: Code"
-set $ws2 "2: Telegram"
-set $ws3 "3: Browser"
-set $ws4 "4: Spotify"
-set $ws5 "5: Code"
-set $ws6 "6: Code"
-set $ws7 "7: Code"
-set $ws8 "8: Code"
-set $ws9 "9: Code"
-set $ws10 "10: Code"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9 
+set $ws10 10
 
 # Switch to workspace
 bindsym Mod4+1 workspace number $ws1
@@ -117,7 +117,7 @@ gaps left 30
 border_radius 10
 
 # Desktop Background
-exec feh --bg-scale ~/Pictures/neon-city-wallpaper.jpg
+exec feh --bg-scale ~/Pictures/cityscape-skyscaper-buildings-city-minimalist-minimalism-y725.jpg
 
 # Rofi
 bindsym Mod4+z exec rofi -show run
@@ -150,8 +150,8 @@ bindsym Mod4+s exec spotify
 # VSCode
 bindsym Mod4+c exec code
 
-# Chromium
-bindsym Mod4+b exec chromium
+# Firefox
+bindsym Mod4+b exec firefox
 
 # Screenshot
 bindsym --release Print exec xfce4-screenshooter
@@ -172,4 +172,4 @@ bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # Load Layout
-bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec chromium; exec code; exec telegram-desktop; exec xfce4-terminal
+bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec code; exec firefox; exec xfce4-terminal
