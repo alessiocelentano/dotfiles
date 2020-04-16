@@ -1,7 +1,4 @@
 # My Dotfiles
-
-## Work in progress...
-These dotfiles work fine with my machine (Manjaro Linux, i3-gaps)
-The repository isn't very organized yet, so for now it's not recommended
+This repository contains my i3-gaps settings + Material Polybar
 
 ![Screenshot](./assets/screenshot.jpg)
