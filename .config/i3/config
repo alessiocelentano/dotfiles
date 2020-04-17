@@ -129,12 +129,11 @@ bindsym Mod4+minus scratchpad show
 # Run picom
 exec_always --no-startup-id $HOME/.config/picom/picom.conf -b
 
-# Kill all panel
-exec_always killall xfce4-panel
-
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# XScreenSaver
+exec xscreensaver &
 
 # /////----- MY SHORTCUT -----\\\\\
 
@@ -170,6 +169,9 @@ bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# XScreenSaver
+bindsym Mod4+Escape exec xscreensaver-command -activate
 
 # Load Layout
 bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec code; exec firefox; exec xfce4-terminal
