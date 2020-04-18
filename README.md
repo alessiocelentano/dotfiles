@@ -1,4 +1,6 @@
-# My Dotfiles
-This repository contains my i3-gaps settings + Material Polybar
+# CMD (Colorful-Material-Dark)
+My Manjaro dotfiles
 
-![Screenshot](./assets/screenshot.jpg)
+![Screenshot1](./assets/screenshot1.png)
+![Screenshot2](./assets/screenshot2.png)
+![Screenshot3](./assets/screenshot3.png)
