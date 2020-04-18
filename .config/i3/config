@@ -117,7 +117,7 @@ gaps left 30
 border_radius 10
 
 # Desktop Background
-exec feh --bg-scale ~/.config/bg
+exec feh --bg-scale ~/.config/bg.png
 
 # Rofi
 bindsym Mod4+z exec rofi -show run
