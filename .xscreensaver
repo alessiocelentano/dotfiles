@@ -1,14 +1,9 @@
 timeout: 0:02:00
 cycle: 0:00:00
 lock: False
-visualID: default
-fade: False
-unfade: False
-dpmsEnabled: False
-dpmsQuickOff: False
-dpmsStandby: 0:01:00
-dpmsSuspend: 0:01:00
-dpmsOff: 0:01:00
+fade: True
+unfade: True
+fadeSeconds: 1
 
 mode: one
 selected:	0
