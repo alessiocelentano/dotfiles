@@ -145,7 +145,7 @@ bindsym Mod4+t exec telegram-desktop
 bindsym Mod4+s exec spotify
 
 # Firefox
-bindsym Mod4+b exec firefox
+bindsym Mod4+b exec vivaldi-stable
 
 # Screenshot and screen record
 bindsym --release Print exec kazam
