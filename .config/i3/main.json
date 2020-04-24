@@ -4,16 +4,18 @@
     "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
-       "height": 960,
-       "width": 1850,
-       "x": 0,
-       "y": 0
+       "height": 1060,
+       "width": 1134,
+       "x": 10,
+       "y": 10
     },
-    "percent": 0.365104166666667,
+    "name": "i3: Layout saving in i3 - Vivaldi",
+    "percent": 0.335416666666667,
     "swallows": [
        {
-       "class": "^firefox$",
-       "instance": "^Navigator$"
+       "class": "^Vivaldi\\-stable$",
+       "instance": "^vivaldi\\-stable$",
+        "window_role": "^browser$"
        }
     ],
     "type": "con"
@@ -22,18 +24,20 @@
 {
     "border": "pixel",
     "current_border_width": 0,
-    "floating": "user_off",
+    "floating": "auto_off",
     "geometry": {
        "height": 600,
        "width": 800,
        "x": 0,
        "y": 0
     },
-    "percent": 0.340885416666667,
+    "name": "Alacritty",
+    "percent": 0.329166666666667,
     "swallows": [
        {
        "class": "^Alacritty$",
-       "instance": "^Alacritty$"
+       "instance": "^Alacritty$",
+       "title": "^Alacritty$"
        }
     ],
     "type": "con"
@@ -44,24 +48,25 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
-    "percent": 0.294010416666667,
+    "percent": 0.335416666666667,
     "type": "con",
     "nodes": [
         {
             "border": "pixel",
             "current_border_width": 0,
-            "floating": "auto_off",
+            "floating": "user_off",
             "geometry": {
                "height": 600,
                "width": 800,
                "x": 0,
                "y": 0
             },
-            "name": "Alacritty",
-            "percent": 0.305555555555555,
+            "name": "htop",
+            "percent": 0.359259259259259,
             "swallows": [
                {
                "class": "^Alacritty$",
+               "instance": "^Alacritty$",
                "title": "^htop$"
                }
             ],
@@ -72,7 +77,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splith",
-            "percent": 0.694444444444445,
+            "percent": 0.640740740740741,
             "type": "con",
             "nodes": [
                 {
@@ -85,6 +90,7 @@
                        "x": 1150,
                        "y": 60
                     },
+                    "name": "Telegram (8441)",
                     "percent": 1,
                     "swallows": [
                        {

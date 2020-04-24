@@ -167,7 +167,7 @@ bindsym Mod4+Escape exec xscreensaver-command -activate
 
 # Load Layouts
 # Note: Spotify WM_CLASS is broken, so to make it work see https://github.com/dasJ/spotifywm
-bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec alacritty; exec firefox; exec telegram-desktop; exec alacritty --title htop --command htop
+bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec alacritty; exec vivaldi-stable; exec telegram-desktop; exec alacritty --title htop --command htop
 
 # Delete all windows
 bindsym Mod4+Shift+q [class=.] kill

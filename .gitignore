@@ -6,11 +6,12 @@
 .config/QtProject.conf
 .config/dconf/
 .config/gtk-3.0/
-.config/pulse/
-.config/spotify/
-.config/QtProject/
 .config/libreoffice/
 .config/mimeapps.list
+.config/pulse/
+.config/spotify/
+.config/vivaldi/
+.config/QtProject/
 dev/
 .gitconfig
 .gnupg/
