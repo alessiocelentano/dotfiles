@@ -90,7 +90,7 @@ mode "resize" {
 }
 
 # Other i3 commands
-bindsym Mod4+Shift+q kill
+bindsym Mod4+q kill
 bindsym Mod4+d exec dmenu_run
 bindsym Mod4+Shift+f fullscreen toggle
 bindsym Mod4+Shift+space floating toggle
@@ -173,5 +173,9 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 # XScreenSaver
 bindsym Mod4+Escape exec xscreensaver-command -activate
 
-# Load Layout
-bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec code; exec firefox; exec xfce4-terminal
+# Load Layouts
+# Note: Spotify WM_CLASS is broken, so to make it work see https://github.com/dasJ/spotifywm
+bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec code; exec firefox; exec xfce4-terminal; exec "i3-msg 'workspace 2; append_layout /home/cele/.config/i3/media.json'"; exec LD_PRELOAD=/usr/lib/libcurl.so.3:/usr/lib/spotifywm.so /bin/spotify; exec telegram-desktop; exec "sh -c 'sleep 0.1; exec xfce4-terminal --title cava -x cava'"; exec "sh -c 'sleep 0.2; exec xfce4-terminal --title htop -x htop'"
+
+# Delete all windows
+bindsym Mod4+Shift+q [class=.] kill
