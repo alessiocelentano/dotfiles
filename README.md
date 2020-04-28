@@ -12,4 +12,4 @@ git clone https://github.com/alessiocelentano/Dotfiles.git
 
 ## Credits
 [Polybar-themes](https://github.com/adi1090x/polybar-themes#-polybar-8): My Polybar is based on the Material Polybar 8 of this repository
-[Grub2-themes] (https://github.com/vinceliuice/grub2-themes): For the awesome GRUB themes and the script for switch them
+[Grub2-themes](https://github.com/vinceliuice/grub2-themes): For the awesome GRUB themes and the script for switch them
