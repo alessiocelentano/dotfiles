@@ -1,0 +1,31 @@
+# Personal files/directories
+.Xauthority
+.bash_history
+.cache
+.config/GIMP/
+.config/QtProject.conf
+.config/dconf/
+.config/gtk-3.0/
+.config/pulse/
+.config/spotify/
+dev/
+.gitconfig
+.gnupg/
+.gnupg
+.lesshst
+.local/
+.mozilla/
+.pki/
+.python_history
+.viminfo
+.wine
+.xsession-errors
+.xsession-errors.old
+Telegram\ Desktop/
+
+# Work in progress
+.config/cava/
+.config/htop/
+.config/kazam/
+.config/neofetch/
+.vim

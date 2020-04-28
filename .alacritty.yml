@@ -1,0 +1,80 @@
+title: Alacritty
+
+class:
+  instance: Alacritty
+  general: Alacritty
+
+font:
+  normal:
+    family: Source Code Pro 
+    style: Regular
+  bold:
+    family: Source Code Pro 
+    style: Bold
+
+  italic:
+    family: Source Code Pro 
+    style: Italic
+
+  size: 7.0
+
+colors:
+  primary:
+    background: '#1d1d1d'
+    foreground: '#eaeaea'
+
+  normal:
+    black:   '#424242'
+    red:     '#ef5350'
+    green:   '#00c853'
+    yellow:  '#FFD600'
+    blue:    '#2962ff'
+    magenta: '#c51162'
+    cyan:    '#00b8d4'
+    white:   '#eaeaea'
+
+  bright:
+    black:   '#9e9e9e'
+    red:     '#ef5350'
+    green:   '#00c853'
+    yellow:  '#FFD600'
+    blue:    '#2962ff'
+    magenta: '#c51162'
+    cyan:    '#00b8d4'
+    white:   '#bdbdbd'
+
+visual_bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: '#ffffff'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style: Beam
+
+live_config_reload: true 
+
+working_directory: ~/
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  url:
+    launcher:
+      program: xdg-open
+      args: []
+
+    modifiers: control
+
+key_bindings:
+- { key: V,        mods: Control|Shift, action: Paste            }
+- { key: C,        mods: Control|Shift, action: Copy             }
+- { key: Insert,   mods: Shift,         action: PasteSelection   }
+- { key: Key0,     mods: Control,       action: ResetFontSize    }
+- { key: Equals,   mods: Control,       action: IncreaseFontSize }
+- { key: Add,      mods: Control,       action: IncreaseFontSize }
+- { key: Subtract, mods: Control,       action: DecreaseFontSize }
+- { key: Minus,    mods: Control,       action: DecreaseFontSize }
