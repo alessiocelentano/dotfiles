@@ -8,6 +8,9 @@
 .config/gtk-3.0/
 .config/pulse/
 .config/spotify/
+.config/QtProject/
+.config/libreoffice/
+.config/mimeapps.list
 dev/
 .gitconfig
 .gnupg/
@@ -17,6 +20,7 @@ dev/
 .mozilla/
 .pki/
 .python_history
+.vim/.netrwhist
 .viminfo
 .wine
 .xsession-errors
@@ -28,4 +32,3 @@ Telegram\ Desktop/
 .config/htop/
 .config/kazam/
 .config/neofetch/
-.vim

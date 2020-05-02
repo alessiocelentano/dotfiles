@@ -20,28 +20,28 @@ font:
 
 colors:
   primary:
-    background: '#1d1d1d'
-    foreground: '#eaeaea'
+    background: '#1e282d'
+    foreground: '#c4c7d1'
 
   normal:
-    black:   '#424242'
-    red:     '#ef5350'
-    green:   '#00c853'
-    yellow:  '#FFD600'
-    blue:    '#2962ff'
-    magenta: '#c51162'
-    cyan:    '#00b8d4'
-    white:   '#eaeaea'
+    black:   '#666666'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#80cbc4'
+    magenta: '#ff2f90'
+    cyan:    '#aeddff'
+    white:   '#ffffff'
 
   bright:
-    black:   '#9e9e9e'
-    red:     '#ef5350'
-    green:   '#00c853'
-    yellow:  '#FFD600'
-    blue:    '#2962ff'
-    magenta: '#c51162'
-    cyan:    '#00b8d4'
-    white:   '#bdbdbd'
+    black:   '#ff262b'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#7dc6bf'
+    magenta: '#6c71c4'
+    cyan:    '#35434d'
+    white:   '#ffffff'
 
 visual_bell:
   animation: EaseOutExpo
@@ -56,7 +56,7 @@ cursor:
 
 live_config_reload: true 
 
-working_directory: ~/
+working_directory: /home/cele
 
 mouse:
   double_click: { threshold: 300 }

@@ -77,15 +77,10 @@ bindsym Mod4+Shift+e exit
 # Resize
 bindsym Mod4+r mode "resize"
 mode "resize" {
-        bindsym $left       resize shrink width 1 px or 1 ppt
-        bindsym $down       resize grow height 1 px or 1 ppt
-        bindsym $up         resize shrink height 1 px or 1 ppt
-        bindsym $right      resize grow width 1 px or 1 ppt
-
-        bindsym Left        resize shrink width 1 px or 1 ppt
-        bindsym Down        resize grow height 1 px or 1 ppt
-        bindsym Up          resize shrink height 1 px or 1 ppt
-        bindsym Right       resize grow width 1 px or 1 ppt
+        bindsym Left        resize shrink width 8 px
+        bindsym Down        resize grow height 8 px 
+        bindsym Up          resize shrink height 8 px
+        bindsym Right       resize grow width 8 px
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -113,7 +108,7 @@ gaps horizontal 20
 gaps vertical 20
 gaps top 40
 gaps right 15
-gaps bottom 15
+gaps bottom 40
 gaps left 15
 
 # Desktop Background
@@ -130,13 +125,13 @@ bindsym Mod4+minus scratchpad show
 exec picom &
 
 # Pulseaudio
-exec pulseaudio &
+exec pulseaudio --start &
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # XScreenSaver
-exec xscreensaver &
+exec xscreensaver -no-splash &
 
 # /////----- MY SHORTCUT -----\\\\\
 
@@ -172,7 +167,7 @@ bindsym Mod4+Escape exec xscreensaver-command -activate
 
 # Load Layouts
 # Note: Spotify WM_CLASS is broken, so to make it work see https://github.com/dasJ/spotifywm
-bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec code; exec firefox; exec xfce4-terminal; exec "i3-msg 'workspace 2; append_layout /home/cele/.config/i3/media.json'"; exec LD_PRELOAD=/usr/lib/libcurl.so.3:/usr/lib/spotifywm.so /bin/spotify; exec telegram-desktop; exec "sh -c 'sleep 0.1; exec xfce4-terminal --title cava -x cava'"; exec "sh -c 'sleep 0.2; exec xfce4-terminal --title htop -x htop'"
+bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec alacritty; exec firefox; exec telegram-desktop; exec alacritty --title htop --command htop
 
 # Delete all windows
 bindsym Mod4+Shift+q [class=.] kill

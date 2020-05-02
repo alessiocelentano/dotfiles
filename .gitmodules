@@ -1,3 +1,6 @@
 [submodule ".grub"]
 	path = .grub
 	url = https://github.com/vinceliuice/grub2-themes
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
