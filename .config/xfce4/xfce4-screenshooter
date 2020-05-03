@@ -1,6 +1,6 @@
 app=env
 last_user=
-screenshot_dir=file:///home/screenshots
+screenshot_dir=file:///home/cele
 action=8
 delay=1
 region=1

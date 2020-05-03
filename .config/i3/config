@@ -112,7 +112,7 @@ gaps bottom 40
 gaps left 15
 
 # Desktop Background
-exec feh --bg-scale ~/.config/bg.png
+exec feh --bg-scale ~/.config/bg.jpg
 
 # Rofi
 bindsym Mod4+z exec rofi -show run
@@ -125,7 +125,7 @@ bindsym Mod4+minus scratchpad show
 exec picom &
 
 # Pulseaudio
-exec pulseaudio --start &
+exec pulseaudio --start
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -144,11 +144,14 @@ bindsym Mod4+t exec telegram-desktop
 # Spotify
 bindsym Mod4+s exec spotify
 
-# Firefox
+# Browser
 bindsym Mod4+b exec vivaldi-stable
 
 # Screenshot and screen record
-bindsym --release Print exec kazam
+for_window [title="SimpleScreenRecorder"] floating enable
+bindsym --release Print exec xfce4-screenshooter
+bindsym --release Shift+Print exec simplescreenrecorder
+border_radius 16
 
 # Media volume controls
 # Require: pamixer
@@ -166,7 +169,6 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym Mod4+Escape exec xscreensaver-command -activate
 
 # Load Layouts
-# Note: Spotify WM_CLASS is broken, so to make it work see https://github.com/dasJ/spotifywm
 bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec alacritty; exec vivaldi-stable; exec telegram-desktop; exec alacritty --title htop --command htop
 
 # Delete all windows

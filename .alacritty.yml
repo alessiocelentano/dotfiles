@@ -18,6 +18,11 @@ font:
 
   size: 7.0
 
+window:
+  padding:
+    x: 7
+    y: 7
+
 colors:
   primary:
     background: '#1e282d'

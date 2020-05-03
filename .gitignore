@@ -21,6 +21,7 @@ dev/
 .mozilla/
 .pki/
 .python_history
+.ssr/
 .vim/.netrwhist
 .viminfo
 .wine
