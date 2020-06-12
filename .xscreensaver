@@ -1,4 +1,4 @@
-timeout: 		0:02:00
+timeout: 		1:00:00
 cycle: 			0:00:00
 lock: 			False
 visualID: 		default
@@ -7,4 +7,4 @@ unfade: 		True
 fadeSeconds: 		1
 mode: 			one
 selected: 		0
-programs: 		gluqlo -root -s 1 \n
+programs: 		gluqlo -root -s 1

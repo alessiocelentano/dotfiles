@@ -1,3 +1,2 @@
 #!/bin/sh
-
-exec i3
+exec openbox-session

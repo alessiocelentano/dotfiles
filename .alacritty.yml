@@ -6,17 +6,17 @@ class:
 
 font:
   normal:
-    family: Source Code Pro 
+    family: Scientifica 
     style: Regular
   bold:
-    family: Source Code Pro 
+    family: Scientifica 
     style: Bold
 
   italic:
-    family: Source Code Pro 
+    family: Scientifica 
     style: Italic
 
-  size: 7.0
+  size: 9.0
 
 window:
   padding:
@@ -25,28 +25,28 @@ window:
 
 colors:
   primary:
-    background: '#1e282d'
+    background: '#212b30'
     foreground: '#c4c7d1'
 
   normal:
     black:   '#666666'
-    red:     '#eb606b'
-    green:   '#c3e88d'
-    yellow:  '#f7eb95'
-    blue:    '#80cbc4'
-    magenta: '#ff2f90'
-    cyan:    '#aeddff'
-    white:   '#ffffff'
+    red:     '#f44336'
+    green:   '#4caf50'
+    yellow:  '#ffeb3b'
+    blue:    '#2196f3'
+    magenta: '#9c27b0'
+    cyan:    '#00bcd4'
+    white:   '#fafafa'
 
   bright:
-    black:   '#ff262b'
-    red:     '#eb606b'
-    green:   '#c3e88d'
+    black:   '#888888'
+    red:     '#e91e63'
+    green:   '#8bc34a'
     yellow:  '#f7eb95'
-    blue:    '#7dc6bf'
-    magenta: '#6c71c4'
-    cyan:    '#35434d'
-    white:   '#ffffff'
+    blue:    '#03a9f4'
+    magenta: '#673ab7'
+    cyan:    '#0097a7'
+    white:   '#e0e0e0'
 
 visual_bell:
   animation: EaseOutExpo
@@ -57,7 +57,7 @@ selection:
   save_to_clipboard: true
 
 cursor:
-  style: Beam
+  style: Block
 
 live_config_reload: true 
 

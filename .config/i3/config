@@ -1,4 +1,4 @@
-# Alessio Celentano Dotfile
+# Alessio Celentano Dotfiles
 
 # /////----- DEFAULT COMMANDS -----\\\\\
 # It's recommended don't change these settings
@@ -102,17 +102,15 @@ font pango: Roboto 12
 # Gaps
 for_window [class="^.*"] border pixel 0
 for_window [title="^.*"] border pixel 0
-gaps inner 20
-gaps outer 20
-gaps horizontal 20
-gaps vertical 20
+gaps inner 15
+gaps outer 15
 gaps top 40
-gaps right 15
-gaps bottom 40
-gaps left 15
+gaps right 10
+gaps bottom 10
+gaps left 10
 
 # Desktop Background
-exec feh --bg-scale ~/.config/bg.jpg
+exec feh --bg-scale ~/.config/bg.png
 
 # Rofi
 bindsym Mod4+z exec rofi -show run
@@ -123,9 +121,6 @@ bindsym Mod4+minus scratchpad show
 
 # Run picom
 exec picom &
-
-# Pulseaudio
-exec pulseaudio --start
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -145,25 +140,23 @@ bindsym Mod4+t exec telegram-desktop
 bindsym Mod4+s exec spotify
 
 # Browser
-bindsym Mod4+b exec vivaldi-stable
+bindsym Mod4+b exec qutebrowser
 
 # Screenshot and screen record
 for_window [title="SimpleScreenRecorder"] floating enable
 bindsym --release Print exec xfce4-screenshooter
 bindsym --release Shift+Print exec simplescreenrecorder
-border_radius 16
 
 # Media volume controls
 # Require: pamixer
-bindsym XF86AudioMute exec pamixer --toggle-mute
-bindsym XF86AudioLowerVolume exec pamixer --decrease 5
-bindsym XF86AudioRaiseVolume exec pamixer --increase 5
+bindsym Mod4+F10 exec pamixer --toggle-mute
+bindsym Mod4+F11 exec pamixer --decrease 5
+bindsym Mod4+F12 exec pamixer --increase 5
 
 # Spotify key bindings 
-bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
-bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym Mod4+slash exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym Mod4+comma exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym Mod4+period exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # XScreenSaver
 bindsym Mod4+Escape exec xscreensaver-command -activate
@@ -173,3 +166,6 @@ bindsym Mod4+space exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i
 
 # Delete all windows
 bindsym Mod4+Shift+q [class=.] kill
+
+# Multi monitor
+force_xinerama yes
