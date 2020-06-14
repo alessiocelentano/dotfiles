@@ -99,18 +99,24 @@ bindsym Mod4+Shift+space floating toggle
 # Font
 font pango: Roboto 12
 
+# Borders
+for_window [class="^.*"] border pixel 3
+for_window [title="^.*"] border pixel 3
+client.focused 		#ffffff #ffffff #ffffff #ffffff	#ffffff
+client.focused_inactive #212b30 #212b30 #212b30 #212b30 #212b30
+client.unfocused 	#212b30 #212b30 #212b30 #212b30 #212b30
+client.urgent 		#212b30 #212b30 #212b30 #212b30 #212b30
+
 # Gaps
-for_window [class="^.*"] border pixel 0
-for_window [title="^.*"] border pixel 0
 gaps inner 15
 gaps outer 15
-gaps top 40
-gaps right 10
-gaps bottom 10
-gaps left 10
+gaps top 30
+gaps right 5
+gaps bottom 5
+gaps left 5
 
 # Desktop Background
-exec feh --bg-scale ~/.config/bg.png
+exec feh --bg-scale ~/.config/bg.jpg
 
 # Rofi
 bindsym Mod4+z exec rofi -show run
@@ -148,14 +154,23 @@ bindsym --release Print exec xfce4-screenshooter
 bindsym --release Shift+Print exec simplescreenrecorder
 
 # Media volume controls
-# Require: pamixer
+bindsym XF86AudioMute exec pamixer --toggle-mute
 bindsym Mod4+F10 exec pamixer --toggle-mute
+
+bindsym XF86AudioLowerVolume exec pamixer --decrease 5
 bindsym Mod4+F11 exec pamixer --decrease 5
+
+bindsym XF86AudioRaiseVolume exec pamixer --increase 5
 bindsym Mod4+F12 exec pamixer --increase 5
 
 # Spotify key bindings 
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 bindsym Mod4+slash exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym Mod4+comma exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 bindsym Mod4+period exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # XScreenSaver
