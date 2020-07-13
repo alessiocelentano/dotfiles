@@ -21,7 +21,7 @@ dev/
 .pki/
 .python_history
 .ssr/
-.vim/.netrwhist
+.vim
 .viminfo
 .wine
 .xsession-errors
