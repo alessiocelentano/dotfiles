@@ -50,3 +50,9 @@ Downloads/
 .themes/
 .thunderbird/
 .config/xfce4/xfce4-screenshooter
+.config/cef_user_data/
+.netrc
+.profile
+.pulse-cookie
+.rustup/
+.cargo/

@@ -9,14 +9,18 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype plugin indent on
 
 " Highlight
-set t_Co=256
-colorscheme PaperColor
-set background=dark
+let g:onedark_hide_endofbuffer=1
+let g:onedark_termcolors=256
 syntax on
+colorscheme onedark
 
 " Encoding
 set encoding=utf-8

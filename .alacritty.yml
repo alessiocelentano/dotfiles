@@ -1,78 +1,126 @@
-title: Alacritty
+window:
+  dimensions:
+    columns: 85
+    lines: 16
 
-class:
-  instance: Alacritty
-  general: Alacritty
+  padding:
+    x: 50
+    y: 40
+
+  dynamic_padding: true
+
+  decorations: full
+
+  startup_mode: Windowed
+
+scrolling:
+  history: 10000
+
+  multiplier: 1
 
 font:
   normal:
-    family: Scientifica 
-    style: Regular
+    family: Source Code Pro
+
   bold:
-    family: Scientifica 
-    style: Bold
+    family: Source Code Pro SemiBold
 
   italic:
-    family: Scientifica 
-    style: Italic
+    family: Curie
 
-  size: 9.0
+  size: 8
 
-window:
-  padding:
-    x: 7
-    y: 7
+  offset:
+    x: 0
+    y: 8
+
+  glyph_offset:
+    x: 0
+    y: 4
+
+  use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '#212b30'
-    foreground: '#c4c7d1'
+    background: '#2E3440'
+    foreground: '#D8DEE9'
 
   normal:
-    black:   '#666666'
-    red:     '#f44336'
-    green:   '#4caf50'
-    yellow:  '#ffeb3b'
-    blue:    '#2196f3'
-    magenta: '#9c27b0'
-    cyan:    '#00bcd4'
-    white:   '#fafafa'
+    black:   '#2E3440'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#88C0D0'
+    white:   '#E5E9F0'
 
   bright:
-    black:   '#888888'
-    red:     '#e91e63'
-    green:   '#8bc34a'
-    yellow:  '#f7eb95'
-    blue:    '#03a9f4'
-    magenta: '#673ab7'
-    cyan:    '#0097a7'
-    white:   '#e0e0e0'
+    black:   '#4C566A'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#8FBCBB'
+    white:   '#ECEFF4'
+
+  indexed_colors: []
 
 visual_bell:
   animation: EaseOutExpo
-  duration: 0
-  color: '#ffffff'
+  duration: 1
+  color: '0x333333'
 
-selection:
-  save_to_clipboard: true
+background_opacity: 1.0
 
-cursor:
-  style: Block
-
-live_config_reload: true 
-
-working_directory: /home/cele
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
 
 mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
 
+  hide_when_typing: true
+
   url:
     launcher:
-      program: xdg-open
-      args: []
+     program: open
 
-    modifiers: control
+    modifiers: None
+
+selection:
+  semantic_escape_chars: ",‚îÇ`|:\"' ()[]{}<>"
+
+  save_to_clipboard: false
+
+dynamic_title: true
+
+cursor:
+  style: Block
+
+  unfocused_hollow: true
+
+live_config_reload: true
+
+working_directory: None
+
+enable_experimental_conpty_backend: false
+
+alt_send_esc: true
+
+debug:
+  render_timer: false
+
+  persistent_logging: false
+
+  log_level: Warn
+
+  print_events: false
+
+  ref_test: false
 
 key_bindings:
 - { key: V,        mods: Control|Shift, action: Paste            }

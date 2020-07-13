@@ -102,10 +102,10 @@ font pango: Roboto 12
 # Borders
 for_window [class="^.*"] border pixel 3
 for_window [title="^.*"] border pixel 3
-client.focused 		#ffffff #ffffff #ffffff #ffffff	#ffffff
-client.focused_inactive #212b30 #212b30 #212b30 #212b30 #212b30
-client.unfocused 	#212b30 #212b30 #212b30 #212b30 #212b30
-client.urgent 		#212b30 #212b30 #212b30 #212b30 #212b30
+client.focused 		#8877ff #8877ff #8877ff #8877ff	#8877ff
+client.focused_inactive #222834 #222834 #222834 #222834 #222834
+client.unfocused 	#222834 #222834 #222834 #222834 #222834
+client.urgent 		#222834 #222834 #222834 #222834 #222834
 
 # Gaps
 gaps inner 15
@@ -119,7 +119,7 @@ gaps left 5
 exec feh --bg-scale ~/.config/bg.jpg
 
 # Rofi
-bindsym Mod4+z exec rofi -show run
+bindsym Mod4+z exec rofi -show drun -show-icons
 
 # Scratchpad
 bindsym Mod4+Shift+minus move scratchpad
