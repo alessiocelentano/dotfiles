@@ -1,8 +1,8 @@
 app=env
 last_user=
-screenshot_dir=file:/home/cele/Desktop
+screenshot_dir=file:/home/cele/assets
 action=1
 delay=1
-region=2
+region=1
 show_mouse=0
 

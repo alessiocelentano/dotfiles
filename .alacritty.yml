@@ -4,8 +4,8 @@ window:
     lines: 16
 
   padding:
-    x: 50
-    y: 40
+    x: 30
+    y: 20
 
   dynamic_padding: true
 
