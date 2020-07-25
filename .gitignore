@@ -56,3 +56,4 @@ Downloads/
 .pulse-cookie
 .rustup/
 .cargo/
+.config/chromium/

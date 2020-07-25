@@ -131,6 +131,9 @@ exec picom &
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Dunst
+exec dunst &
+
 # XScreenSaver
 exec xscreensaver -no-splash &
 
@@ -146,7 +149,7 @@ bindsym Mod4+t exec telegram-desktop
 bindsym Mod4+s exec spotify
 
 # Browser
-bindsym Mod4+b exec qutebrowser
+bindsym Mod4+b exec chromium
 
 # Screenshot and screen record
 for_window [title="SimpleScreenRecorder"] floating enable
