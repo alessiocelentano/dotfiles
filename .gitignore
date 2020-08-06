@@ -57,3 +57,7 @@ Downloads/
 .rustup/
 .cargo/
 .config/chromium/
+.config/Code - OSS/
+.config/VSCodium/
+.pylint.d/
+.vscode-oss/

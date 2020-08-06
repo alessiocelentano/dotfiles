@@ -102,7 +102,7 @@ font pango: Roboto 12
 # Borders
 for_window [class="^.*"] border pixel 3
 for_window [title="^.*"] border pixel 3
-client.focused 		#8877ff #8877ff #8877ff #8877ff	#8877ff
+client.focused 		#ffffff #ffffff #ffffff #ffffff	#ffffff
 client.focused_inactive #222834 #222834 #222834 #222834 #222834
 client.unfocused 	#222834 #222834 #222834 #222834 #222834
 client.urgent 		#222834 #222834 #222834 #222834 #222834
@@ -110,10 +110,7 @@ client.urgent 		#222834 #222834 #222834 #222834 #222834
 # Gaps
 gaps inner 15
 gaps outer 15
-gaps top 30
-gaps right 5
-gaps bottom 5
-gaps left 5
+gaps top 36
 
 # Desktop Background
 exec feh --bg-scale ~/.config/bg.jpg
@@ -150,6 +147,9 @@ bindsym Mod4+s exec spotify
 
 # Browser
 bindsym Mod4+b exec chromium
+
+# VSCodium
+bindsym Mod4+c exec vscodium
 
 # Screenshot and screen record
 for_window [title="SimpleScreenRecorder"] floating enable

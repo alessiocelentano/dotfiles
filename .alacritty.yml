@@ -7,8 +7,6 @@ window:
     x: 30
     y: 20
 
-  dynamic_padding: true
-
   decorations: full
 
   startup_mode: Windowed
@@ -28,7 +26,7 @@ font:
   italic:
     family: Curie
 
-  size: 8
+  size: 9
 
   offset:
     x: 0
@@ -69,7 +67,7 @@ colors:
 
   indexed_colors: []
 
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 1
   color: '0x333333'
@@ -95,8 +93,6 @@ selection:
   semantic_escape_chars: ",‚îÇ`|:\"' ()[]{}<>"
 
   save_to_clipboard: false
-
-dynamic_title: true
 
 cursor:
   style: Block
