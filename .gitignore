@@ -61,3 +61,13 @@ Downloads/
 .config/VSCodium/
 .pylint.d/
 .vscode-oss/
+.NERDTreeBookmarks
+.config/bspwm/
+.config/discord/
+.config/enchant/
+.config/gtk-2.0/
+.config/keepassxc/
+.ssh/
+.stack/
+.wget-hsts
+pydebug/

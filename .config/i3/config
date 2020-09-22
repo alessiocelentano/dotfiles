@@ -89,7 +89,6 @@ mode "resize" {
 
 # Other i3 commands
 bindsym Mod4+q kill
-bindsym Mod4+d exec dmenu_run
 bindsym Mod4+Shift+f fullscreen toggle
 bindsym Mod4+Shift+space floating toggle
 
@@ -100,23 +99,18 @@ bindsym Mod4+Shift+space floating toggle
 font pango: Roboto 12
 
 # Borders
-for_window [class="^.*"] border pixel 3
-for_window [title="^.*"] border pixel 3
-client.focused 		#ffffff #ffffff #ffffff #ffffff	#ffffff
-client.focused_inactive #222834 #222834 #222834 #222834 #222834
-client.unfocused 	#222834 #222834 #222834 #222834 #222834
-client.urgent 		#222834 #222834 #222834 #222834 #222834
+for_window [class="^.*"] border pixel 0
+for_window [title="^.*"] border pixel 0
 
 # Gaps
-gaps inner 15
-gaps outer 15
-gaps top 36
+gaps inner 20
+smart_gaps on
 
 # Desktop Background
 exec feh --bg-scale ~/.config/bg.jpg
 
 # Rofi
-bindsym Mod4+z exec rofi -show drun -show-icons
+bindsym Mod4+z exec ~/.config/polybar/scripts/menu
 
 # Scratchpad
 bindsym Mod4+Shift+minus move scratchpad
@@ -137,7 +131,7 @@ exec xscreensaver -no-splash &
 # /////----- MY SHORTCUT -----\\\\\
 
 # Terminal
-bindsym Mod4+Return exec alacritty
+bindsym Mod4+Return exec urxvt
 
 # Telegram Desktop
 bindsym Mod4+t exec telegram-desktop
@@ -150,6 +144,9 @@ bindsym Mod4+b exec chromium
 
 # VSCodium
 bindsym Mod4+c exec vscodium
+
+# Discord
+bindsym Mod4+d exec discord
 
 # Screenshot and screen record
 for_window [title="SimpleScreenRecorder"] floating enable
@@ -165,6 +162,9 @@ bindsym Mod4+F11 exec pamixer --decrease 5
 
 bindsym XF86AudioRaiseVolume exec pamixer --increase 5
 bindsym Mod4+F12 exec pamixer --increase 5
+
+# Network windoww
+for_window [class="nm-connection-editor"] floating enable
 
 # Spotify key bindings 
 bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"

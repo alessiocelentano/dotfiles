@@ -2,3 +2,29 @@ rofi.font: Source Code Pro 15
 rofi.icon-theme: Papirus
 rofi.lines: 10
 rofi.columns: 1
+URxvt.chdir: /home/cele/
+URxvt.scrollBar: False
+URxvt.cursorUnderline: False
+URxvt.cursorBlink: True
+URxvt.background: #2E3440
+URxvt.foreground: #ECEFF4
+URxvt.color0: #3B4252
+URxvt.color1: #BF616A
+URxvt.color2: #8FBCBB
+URxvt.color3: #EBCB8B
+URxvt.color4: #5E81AC 
+URxvt.color5: #B48EAD
+URxvt.color6: #88C0D0
+URxvt.color7: #D8DEE9
+URxvt.color8: #4C566A
+URxvt.color9: #D08770
+URxvt.color10: #A3BE8C
+URxvt.color11: #EBCB8B
+URxvt.color12: #81A1C1
+URxvt.color13: #B48EAD
+URxvt.color14: #88C0D0
+URxvt.color15: #E5E9F0
+URxvt.font: xft:Source Code Pro Medium:pixelsize=20
+URxvt.boldFont: xft:Source Code Pro Semibold:pixelsize=20
+URxvt.italicFont: xft:Source Code Pro Light:pixelsize=20
+URxvt.internalBorder: 30

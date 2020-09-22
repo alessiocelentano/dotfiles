@@ -11,22 +11,36 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'mg979/vim-visual-multi'
+Plugin 'tpope/vim-surround'
+Plugin 'preservim/nerdtree'
+Plugin 'dense-analysis/ale'
+Plugin 'vim-vdebug/vdebug'
 call vundle#end()
-filetype plugin indent on
 
 " Highlight
-let g:onedark_hide_endofbuffer=1
-let g:onedark_termcolors=256
 syntax on
-colorscheme onedark
+colorscheme nord
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
 
-" Encoding
+" Fzf shortcuts
+let $FZF_DEFAULT_COMMAND = 'ag -u -g "" path $HOME'
+
+" Map
+map ; :FZF --exact $HOME<CR>
+map ,t :NERDTreeFind<CR>
+map ,c :NERDTreeToggle<CR>
+
+" Others
+filetype plugin indent on
 set encoding=utf-8
-
-" Line Numbering
 set nu
-
-" Clipboard
 set clipboard=unnamedplus
+set laststatus=2
+set autochdir
+
