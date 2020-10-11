@@ -1,12 +1,8 @@
-# Material Dotfiles
-Arch Linux + i3wm configuration by Alessio Celentano.
-![Screenshot1](assets/screenshot1.png)
-![Screenshot2](assets/screenshot2.png)
+# Dotfiles
+A list of dotfiles by Alessio Celentano (Arch Linux, i3wm, Polybar)
 
 ## Usage
-```
-cd ~
-git clone https://github.com/alessiocelentano/Dotfiles.git
-cp .config/polybar/fonts/* /usr/share/fonts
-```
-**Warning**: before doing anything, I suggest forking this repo, check all files and edit/remove for the proper functioning of this configuration.
+Currently this repository is just a backup for me (I'm using KDE Plasma+i3), but you can take a look at my previous works:
+- [Colorful Material Dotfiles with floating bars](https://github.com/alessiocelentano/dotfiles/tree/c55f1c6aab7d66750df642ee391d804bfd002b5f) (2020/05)
+- [Colorful Material Dotfiles v2](https://github.com/alessiocelentano/dotfiles/tree/52f534574803c384015335aa10276a7b8d894313) [2020/06]
+- [Blue Material/Nord](https://github.com/alessiocelentano/dotfiles/tree/def757afcd4825a6bbf80ef2c7d5510ce4d3f60c) [2020/07]
