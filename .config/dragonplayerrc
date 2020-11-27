@@ -1,0 +1,24 @@
+[General]
+Recent Urls[$e]=file:$HOME/Desktop/out.ogv
+TimeFormat=1
+Volume=1
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP1 Height 1080=720
+eDP1 Width 1920=1280
+eDP1 Window-Maximized 1080x1920=true
+eDP1 XPosition=0
+eDP1 YPosition=56
+
+[file:///home/cele/Desktop/out.ogv]
+Brightness=0
+Contrast=0
+Date=2020,10,18
+Hue=0
+IsVideo=false
+Preferred Size=1920,960
+Saturation=0
+Subtitle=0

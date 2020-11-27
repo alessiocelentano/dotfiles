@@ -1,0 +1,21 @@
+[FileDialogSize]
+HDMI1 Height 1080=986
+HDMI1 Width 1920=576
+
+[general]
+File1[$e]=$HOME/.cache/yay/
+File2[$e]=$HOME/.cache/yay/nerd-fonts-complete/
+File3[$e]=$HOME
+File4[$e]=/
+Name1[$e]=
+Name2[$e]=
+Name3[$e]=cele
+Name4[$e]=
+
+[window]
+HDMI1 Height 1080=986
+HDMI1 Width 1920=896
+HDMI1 XPosition=992
+HDMI1 YPosition=32
+State=AAAA/wAAAAD9AAAAAAAAA4AAAAOBAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBsAG8AYwBhAHQAaQBvAG4AVABvAG8AbABCAGEAcgEAAAHe/////wAAAAAAAAAAAAAAFgB2AGkAZQB3AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled

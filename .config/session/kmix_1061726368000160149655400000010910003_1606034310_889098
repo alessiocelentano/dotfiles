@@ -1,0 +1,11 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=KMixWindow
+MenuBar=Disabled
+ObjectName=KMixWindow
+State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+eDP1 HDMI1 XPosition=0
+eDP1 HDMI1 YPosition=0

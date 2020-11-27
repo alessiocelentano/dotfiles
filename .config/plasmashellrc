@@ -1,0 +1,71 @@
+[DownloadDialog Settings]
+eDP1 Height 1080=477
+eDP1 Width 1920=700
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/Telegram Desktop/wp5411656.jpg,file:$HOME/bg.png,file:$HOME/rect833111.png,file:$HOME/rect833.png,file:$HOME/rect8331.png,file:$HOME/bitmap.png,file:$HOME/Downloads/Telegram Desktop/download.jpeg,file:$HOME/Downloads/Telegram Desktop/current.jpg
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Downloads/Telegram Desktop/,file:$HOME/,file:$HOME/Pictures/
+detailViewIconSize=0
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_applications:org.kde.plasma.themeexplorer.desktop,6 services_applications:org.kde.kdevelop.desktop,1 services_applications:org.kde.discover.desktop,5 services_applications:kcm_keys.desktop,2 services_applications:org.kde.kwrite.desktop,8 services_applications:Alacritty.desktop,1 services_applications:qdbusviewer.desktop,20 services_applications:systemsettings.desktop,1 services_applications:autostart.desktop,8 services_applications:kcm_kscreen.desktop,1 services_applications:kcm_icons.desktop,5 services_applications:code-oss.desktop,1 services_applications:kwincompositing.desktop,1 services_applications:mouse.desktop,1 services_applications:org.kde.ktimer.desktop,1 services_applications:powerdevilactivitiesconfig.desktop,1 services_applications:org.kde.kcharselect.desktop,1 services_applications:kwinscreenedges.desktop,1 services_applications:powerdevilglobalconfig.desktop,1 services_applications:kcmdolphinviewmodes.desktop,2 services_applications:kcm_fonts.desktop,32 services_applications:discord.desktop,2 services_applications:org.kde.kate.desktop,10 services_applications:chromium.desktop,26 services_applications:xfce4-screenshooter.desktop,3 services_applications:libreoffice-writer.desktop,5 services_applications:khotkeys.desktop,2 services_applications:org.inkscape.Inkscape.desktop,7 services_applications:kcm_lookandfeel.desktop,11 services_applications:thunderbird.desktop,1 services_applications:spotify.desktop,1 services_applications:kcm_style.desktop,1 services_applications:konqbrowser.desktop,1 services_applications:solid-actions.desktop,1 services_applications:htop.desktop,10 services_applications:spotify_spotify.desktop,1 services_applications:bluedevilglobal.desktop,1 services_applications:bluedevildevices.desktop,2 services_applications:bluetooth.desktop,2 services_applications:user_manager.desktop,1 services_applications:org.kde.konsole.desktop,1 services_applications:org.kde.kdevelop.desktop?action=OpenSession,1 services_applications:org.kde.dolphin.desktop,4 services_applications:org.kde.kamoso.desktop,5 services_applications:telegramdesktop.desktop
+
+[PlasmaTransientsConfig]
+PreloadWeight=0
+
+[PlasmaViews][Panel 2]
+alignment=132
+panelVisibility=0
+
+[PlasmaViews][Panel 2][Defaults]
+maxLength=1920
+minLength=1920
+thickness=30
+
+[PlasmaViews][Panel 2][Horizontal1920]
+maxLength=1920
+minLength=1920
+thickness=30
+
+[PlasmaViews][Panel 22][Defaults]
+thickness=36
+
+[PlasmaViews][Panel 22][Horizontal1920]
+thickness=36
+
+[PlasmaViews][Panel 39][Defaults]
+thickness=27
+
+[PlasmaViews][Panel 39][Horizontal1920]
+thickness=27
+
+[PlasmaViews][Panel 40]
+alignment=132
+panelVisibility=1
+
+[PlasmaViews][Panel 40][Defaults]
+maxLength=938
+minLength=272
+thickness=60
+
+[PlasmaViews][Panel 40][Horizontal1920]
+thickness=36
+
+[PlasmaViews][Panel 40][Vertical1080]
+maxLength=938
+minLength=272
+thickness=60
+
+[PlasmaViews][Panel 40][Vertical720]
+thickness=60
+
+[PlasmaViews][Panel 40][Vertical768]
+thickness=60
+
+[ScreenConnectors]
+0=HDMI1
+1=eDP1
+2=:0.0
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js

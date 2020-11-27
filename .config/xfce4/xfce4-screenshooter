@@ -1,6 +1,6 @@
-app=env
+app=feh
 last_user=
-screenshot_dir=file:/home/cele/assets
+screenshot_dir=file:/home/cele/Downloads
 action=1
 delay=1
 region=3

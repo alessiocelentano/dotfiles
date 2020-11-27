@@ -4,8 +4,8 @@ window:
     lines: 16
 
   padding:
-    x: 30
-    y: 20
+    x: 0
+    y: 0
 
   decorations: full
 
@@ -18,52 +18,52 @@ scrolling:
 
 font:
   normal:
-    family: Source Code Pro
+    family: Hermit
 
   bold:
-    family: Source Code Pro SemiBold
+    family: Hermit
+    style: Bold
 
   italic:
-    family: Curie
+    family: Hermit
+    style: Italic
 
-  size: 9
+  size: 13
 
   offset:
     x: 0
-    y: 8
+    y: 0
 
   glyph_offset:
     x: 0
-    y: 4
-
-  use_thin_strokes: true
+    y: 0
 
 draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '#2E3440'
-    foreground: '#D8DEE9'
+    background: '#212121'
+    foreground: '#eeeeee'
 
   normal:
-    black:   '#2E3440'
-    red:     '#BF616A'
-    green:   '#A3BE8C'
-    yellow:  '#EBCB8B'
-    blue:    '#81A1C1'
-    magenta: '#B48EAD'
-    cyan:    '#88C0D0'
-    white:   '#E5E9F0'
+    black:   '#212121'
+    red:     '#f44336'
+    green:   '#4caf50'
+    yellow:  '#ffeb3b'
+    blue:    '#2196f3'
+    magenta: '#e91e63'
+    cyan:    '#00bcd4'
+    white:   '#eeeeee'
 
   bright:
-    black:   '#4C566A'
-    red:     '#BF616A'
-    green:   '#A3BE8C'
-    yellow:  '#EBCB8B'
-    blue:    '#81A1C1'
-    magenta: '#B48EAD'
-    cyan:    '#8FBCBB'
-    white:   '#ECEFF4'
+    black:   '#616161'
+    red:     '#d32f2f'
+    green:   '#388e3c'
+    yellow:  '#fbc02d'
+    blue:    '#1976d2'
+    magenta: '#c2185b'
+    cyan:    '#0097a7'
+    white:   '#9e9e9e'
 
   indexed_colors: []
 

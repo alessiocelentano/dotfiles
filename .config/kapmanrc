@@ -1,0 +1,12 @@
+[General]
+Theme=themes/mummies_crypt.desktop
+
+[KgDifficulty]
+Level=Medium
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAO0AAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+eDP1 Window-Maximized 1080x1920=true
+eDP1 XPosition=0
+eDP1 YPosition=29

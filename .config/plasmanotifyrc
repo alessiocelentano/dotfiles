@@ -1,0 +1,14 @@
+[Applications][discord]
+Seen=true
+
+[Applications][firefox]
+Seen=true
+
+[Applications][spotify_spotify]
+Seen=true
+
+[Applications][thunderbird]
+Seen=true
+
+[Notifications]
+PopupPosition=TopRight

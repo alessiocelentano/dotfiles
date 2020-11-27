@@ -1,0 +1,36 @@
+[KFileDialog Settings]
+Recent Files[$e]=startplasma-x11-i3,file:$HOME/CLion/bin/clion,file:///usr/local/bin/startplasma-x11-i3
+Recent URLs[$e]=file:///usr/local/bin/,file:$HOME/CLion/bin/
+detailViewIconSize=0
+
+[MainWindow]
+HDMI1 Height 1080=986
+HDMI1 Width 1920=1856
+HDMI1 XPosition=32
+HDMI1 YPosition=557
+HDMI1 eDP1 Height 1080=461
+HDMI1 eDP1 Width 1920=1856
+HDMI1 eDP1 XPosition=32
+HDMI1 eDP1 YPosition=452
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABEAAAAFkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1 Height 1080=700
+eDP-1 Width 1920=1024
+eDP1 HDMI1 Height 1080=950
+eDP1 HDMI1 Height 768=736
+eDP1 HDMI1 Width 1360=672
+eDP1 HDMI1 Width 1920=890
+eDP1 HDMI1 XPosition=985
+eDP1 HDMI1 YPosition=85
+eDP1 Height 1080=986
+eDP1 Width 1920=1856
+eDP1 XPosition=32
+eDP1 YPosition=32
+
+[Notification Messages]
+FormatSettingsChanged=false
+
+[Open-with settings]
+CompletionMode=1
+History=Alac

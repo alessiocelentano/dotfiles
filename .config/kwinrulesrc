@@ -1,0 +1,10 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum
+
+[1]
+opacityactiverule=1
+opacityinactive=100
+opacityinactiverule=1
+
+[General]
+count=1

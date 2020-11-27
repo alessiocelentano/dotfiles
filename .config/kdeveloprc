@@ -1,0 +1,290 @@
+[CMakeBuildDirChooser]
+LastExtraArguments=-lncurses
+
+[Desktop Entry]
+DefaultProfile=
+
+[External Scripts]
+firstUse=false
+
+[External Scripts][Google Selection]
+command=xdg-open "https://www.google.com/search?q=%s"
+errorMode=0
+filterMode=0
+inputMode=0
+name=Google Selection
+outputMode=0
+saveMode=0
+shortcuts=
+showOutput=false
+
+[External Scripts][Paste to Hastebin]
+command=a=$(cat); curl -X POST -s -d "$a" https://hastebin.com/documents | awk -F '"' '{print "https://hastebin.com/"$4}' | xargs xdg-open ;
+errorMode=0
+filterMode=0
+inputMode=2
+name=Paste to Hastebin
+outputMode=0
+saveMode=0
+shortcuts=
+showOutput=false
+
+[External Scripts][Quick Compile]
+command=g++ -o %b %f && ./%b
+errorMode=0
+filterMode=0
+inputMode=0
+name=Quick Compile
+outputMode=0
+saveMode=0
+shortcuts=
+showOutput=true
+
+[External Scripts][Sort Selection]
+command=sort
+errorMode=0
+filterMode=0
+inputMode=2
+name=Sort Selection
+outputMode=3
+saveMode=0
+shortcuts=
+showOutput=false
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+HDMI1 Height 1080=461
+HDMI1 Width 1920=1856
+Recent Files[$e]=main.c,file:$HOME/dev/dstetris/main.c
+Recent URLs[$e]=file:$HOME/dev/dstetris/
+detailViewIconSize=0
+eDP1 Height 1080=540
+eDP1 Width 1920=960
+
+[KTextEditor Document]
+Allow End of Line Detection=true
+BOM=false
+Backup Local=false
+Backup Prefix=
+Backup Remote=false
+Backup Suffix=~
+Encoding=UTF-8
+End of Line=0
+Indent On Backspace=true
+Indent On Tab=true
+Indent On Text Paste=false
+Indentation Mode=normal
+Indentation Width=4
+Keep Extra Spaces=false
+Line Length Limit=10000
+Newline at End of File=true
+On-The-Fly Spellcheck=false
+Overwrite Mode=false
+PageUp/PageDown Moves Cursor=false
+Remove Spaces=0
+ReplaceTabsDyn=true
+Show Spaces=0
+Show Tabs=true
+Smart Home=true
+Swap Directory=
+Swap File Mode=1
+Swap Sync Interval=15
+Tab Handling=2
+Tab Width=4
+Trailing Marker Size=1
+Word Wrap=false
+Word Wrap Column=80
+
+[KTextEditor Editor]
+Encoding Prober Type=1
+Fallback Encoding=ISO 8859-15
+
+[KTextEditor Renderer]
+Animate Bracket Matching=false
+Auto Color Theme Selection=true
+Color Theme=Breeze Dark
+Font=Roboto,10,-1,5,50,0,0,0,0,0
+Schema=Normal
+Show Indentation Lines=false
+Show Whole Bracket Expression=false
+Word Wrap Marker=false
+
+[KTextEditor View]
+Allow Mark Menu=true
+Auto Brackets=false
+Auto Center Lines=0
+Auto Completion=true
+Backspace Remove Composed Characters=false
+Bookmark Menu Sorting=0
+Bracket Match Preview=false
+Chars To Enclose Selection=
+Default Mark Type=1
+Dynamic Word Wrap=true
+Dynamic Word Wrap Align Indent=80
+Dynamic Word Wrap At Static Marker=false
+Dynamic Word Wrap Indicators=1
+Dynamic Wrap not at word boundaries=false
+Fold First Line=false
+Folding Bar=true
+Folding Preview=true
+Icon Bar=false
+Input Mode=0
+Keyword Completion=true
+Line Modification=false
+Line Numbers=false
+Maximum Search History Size=100
+Mouse Paste At Cursor Position=false
+Persistent Selection=false
+Scroll Bar Marks=false
+Scroll Bar Mini Map All=true
+Scroll Bar Mini Map Width=60
+Scroll Bar MiniMap=true
+Scroll Bar Preview=true
+Scroll Past End=false
+Search/Replace Flags=140
+Show Line Count=false
+Show Scrollbars=0
+Show Word Count=false
+Smart Copy Cut=false
+Text Drag And Drop=true
+User Sets Of Chars To Enclose Selection=
+Vi Input Mode Steal Keys=false
+Vi Relative Line Numbers=false
+Word Completion=true
+Word Completion Minimal Word Length=3
+Word Completion Remove Tail=true
+
+[KatePart Settings]
+documents=/home/cele/dev/tetris/main.c,/home/cele/projects/dstetris/README.md,/home/cele/dev/dstetris/main.c,/home/cele/projects/dstetris/src/dstetris.cpp
+
+[KatePart Settings][/home/cele/dev/dstetris/main.c]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C
+Mode Set By User=false
+URL=file:///home/cele/dev/dstetris/main.c
+
+[KatePart Settings][/home/cele/dev/tetris/main.c]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C
+Mode Set By User=false
+URL=file:///home/cele/dev/tetris/main.c
+
+[KatePart Settings][/home/cele/projects/dstetris/README.md]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=Markdown
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Markdown
+Mode Set By User=false
+URL=file:///home/cele/projects/dstetris/README.md
+
+[KatePart Settings][/home/cele/projects/dstetris/src/dstetris.cpp]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+URL=file:///home/cele/projects/dstetris/src/dstetris.cpp
+
+[Main Window]
+Desktop 1920 1080=32,32,1856,461
+
+[MainWindow]
+HDMI1 Height 1080=461
+HDMI1 Width 1920=1856
+HDMI1 XPosition=32
+HDMI1 YPosition=32
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAcGAAAAfvwBAAAABfsAAAAiAEMAbwBkAGUAIABCAHIAbwB3AHMAZQByAF8AYwBvAGQAZQAAAAAeAAAHHAAAAHkBAAAD+wAAAAoAXwBjAG8AZABlAQAAAB4AAAccAAAAAAAAAAD7AAAAGgBQAHIAbwBiAGwAZQBtAHMAXwBjAG8AZABlAAAAAB0AAAcGAAAArwEAAAP7AAAAGABLAG8AbgBzAG8AbABlAF8AYwBvAGQAZQAAAAAdAAAHBgAAAK8BAAAD+wAAABQAQgB1AGkAbABkAF8AYwBvAGQAZQEAAAAdAAAHBgAAAHkBAAADAAAHBgAAAvYAAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAAEV/////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAAU//////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP1 Height 1080=1004
+eDP1 Width 1920=1880
+eDP1 XPosition=20
+eDP1 YPosition=56
+
+[MainWindow_code]
+(1) Tool Views Order=org.kdevelop.DocumentsView,org.kdevelop.ScratchpadView,org.kdevelop.ProjectsView,org.kdevelop.ClassBrowserView,org.kdevelop.FileManagerView
+(2) Tool Views Order=org.kdevelop.ExternalScriptView
+(8) Tool Views Order=org.kdevelop.ProblemReporterView,org.kdevelop.KonsoleView,org.kdevelop.ContextBrowser
+HDMI1 Height 1080=461
+HDMI1 Width 1920=1856
+HDMI1 XPosition=32
+HDMI1 YPosition=32
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAcGAAAAfvwBAAAABfsAAAAiAEMAbwBkAGUAIABCAHIAbwB3AHMAZQByAF8AYwBvAGQAZQAAAAAeAAAHHAAAAHkBAAAD+wAAAAoAXwBjAG8AZABlAQAAAB4AAAccAAAAAAAAAAD7AAAAGgBQAHIAbwBiAGwAZQBtAHMAXwBjAG8AZABlAAAAAB0AAAcGAAAArwEAAAP7AAAAGABLAG8AbgBzAG8AbABlAF8AYwBvAGQAZQAAAAAdAAAHBgAAAK8BAAAD+wAAABQAQgB1AGkAbABkAF8AYwBvAGQAZQEAAAAdAAAHBgAAAHkBAAADAAAHBgAAAvYAAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAAEV/////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAAU//////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+debugToolBarVisibility=false
+eDP1 Height 1080=1004
+eDP1 Width 1920=1880
+eDP1 XPosition=20
+eDP1 YPosition=56
+
+[Open File]
+Last Open File Directory=file:///home/cele/projects/dstetris/
+
+[Recent Files]
+File1[$e]=$HOME/dev/dstetris/main.c
+File2[$e]=$HOME/projects/dstetris/src/dstetris.cpp
+File3[$e]=$HOME/projects/dstetris/README.md
+Name1[$e]=main.c
+Name2[$e]=dstetris.cpp
+Name3[$e]=README.md
+
+[RecentProjects]
+File1[$e]=$HOME/projects/dstetris/.kdev4/dstetris.kdev4
+File2[$e]=$HOME/projects/dstetris/dstetris.kdev4
+Name1[$e]=dstetris.kdev4
+Name2[$e]=dstetris.kdev4
+
+[Sessions]
+Active Session ID={646a687a-75e1-4b8a-a93c-2709a419e1e1}
+
+[UiSettings]
+ShowTextEditorStatusBar=false
+
+[UiSettings/Docks/ToolbarEnabled]
+Build_code=true
+Code Browser_code=true
+Problems_code=true
+_code=true
+
+[User Interface]
+Main Windows Count=1
+
+[User Interface][Main Window 0][Area code]
+desired views=org.kdevelop.ClassBrowserView:1,org.kdevelop.ContextBrowser:8,org.kdevelop.DocumentsView:1,org.kdevelop.ExternalScriptView:2,org.kdevelop.FileManagerView:1,org.kdevelop.KonsoleView:8,org.kdevelop.OutputView:8,org.kdevelop.OutputView.0:8,org.kdevelop.ProblemReporterView:8,org.kdevelop.ProjectsView:1,org.kdevelop.ScratchpadView:1,org.kdevelop.SnippetView:2
+id=code
+view on bottom=org.kdevelop.OutputView.0
+view on left=
+view on right=
+view on top=
+working set=code_4271094
+
+[User Interface][Main Window 0][Area debug]
+desired views=org.kdevelop.FileManagerView:1,org.kdevelop.KonsoleView:8,org.kdevelop.OutputView.0:8,org.kdevelop.debugger.BreakpointsView:8,org.kdevelop.debugger.ConsoleView:8,org.kdevelop.debugger.StackView:8,org.kdevelop.debugger.VariablesView:1
+id=debug
+view on bottom=
+view on left=
+view on right=
+view on top=
+working set=
+
+[User Interface][Main Window 0][Area review]
+desired views=org.kdevelop.FileManagerView:1,org.kdevelop.OutputView.0:8,org.kdevelop.PatchReview:8,org.kdevelop.ProjectsView:1
+id=review
+view on bottom=
+view on left=
+view on right=
+view on top=
+working set=

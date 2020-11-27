@@ -19,6 +19,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'preservim/nerdtree'
 Plugin 'dense-analysis/ale'
 Plugin 'vim-vdebug/vdebug'
+Plugin 'kristijanhusak/vim-hybrid-material'
 call vundle#end()
 
 " Highlight
@@ -43,4 +44,3 @@ set nu
 set clipboard=unnamedplus
 set laststatus=2
 set autochdir
-
