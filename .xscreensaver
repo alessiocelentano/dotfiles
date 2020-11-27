@@ -1,9 +1,0 @@
-timeout: 		1:00:00
-cycle: 			0:00:00
-lock: 			False
-visualID: 		default
-fade: 			False
-unfade: 		False
-mode: 			one
-selected: 		0
-programs: 		gluqlo -root -s 1

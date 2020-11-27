@@ -1,8 +1,8 @@
 app=feh
 last_user=
-screenshot_dir=file:/home/cele/Downloads
+screenshot_dir=file:/home/cele
 action=1
 delay=1
-region=3
+region=1
 show_mouse=0
 
