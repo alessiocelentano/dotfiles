@@ -75,3 +75,10 @@ books/
 logos/
 .grub/
 .config/spicetify/
+.config/dleyna-renderer-service.conf
+.config/dleyna-server-service.conf
+.config/evolution/
+.config/gnome-control-center/
+.config/monitors.xml
+.config/session/*
+.config/user-dirs*

@@ -1,8 +1,8 @@
 [FileDialogSize]
-HDMI1 Height 1080=356
-HDMI1 Width 1920=1088
+HDMI1 Height 1080=986
+HDMI1 Width 1920=576
 
 [KFileDialog Settings]
-Recent Files[$e]=bg.jpg,file:$HOME/Downloads/Untitled 1.odt,file:$HOME/Downloads/Screenshot_2020-11-23_15-55-48.png,file:$HOME/Downloads/Screenshot_2020-11-23_15-49-09.png,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-16_21-08-18.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-16_21-08-19.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-13_09-18-38.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-13_09-18-39.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-13_09-18-40.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-02_20-59-35.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-11-02_20-59-36.jpg,file:$HOME/Downloads/Telegram Desktop/wp5411656.jpg,file:$HOME/Downloads/Telegram Desktop/download.jpeg,file:$HOME/dev/rotomgram/src/texts.json,file:$HOME/dev/rotomgram/src/Rotomgram.session-journal,file:$HOME/dev/rotomgram/src/Rotomgram.session
-Recent URLs[$e]=file:///var/lib/AccountsService/icons/,file:$HOME/Downloads/,file:///usr/share/lightdm-webkit/themes/lightdm-webkit-theme-aether/src/img/wallpapers/,file:$HOME/,file:$HOME/.config/,file:$HOME/dev/rotomgram/src/,file:$HOME/Desktop/,file:$HOME/Downloads/Telegram Desktop/
+Recent Files[$e]=Screenshot_2020-11-23_15-55-48.png,file:$HOME/Downloads/photo_2020-11-27_15-38-42.jpg,file:$HOME/Downloads/Screenshot_2020-11-23_15-55-48.png
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
 detailViewIconSize=16

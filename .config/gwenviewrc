@@ -1,18 +1,2 @@
 [$Version]
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
-
-[MainWindow]
-MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAuoAAAG6AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
-ToolBarsMovable=Disabled
-eDP1 Height 1080=480
-eDP1 Width 1920=746
-eDP1 XPosition=964
-eDP1 YPosition=378
-
-[Recent Files]
-File1[$e]=$HOME/Downloads/download.png
-Name1[$e]=download.png
-
-[SideBar]
-SideBarSplitterSizes=242,501

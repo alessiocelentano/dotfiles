@@ -1,24 +1,21 @@
 [General]
-Recent Urls[$e]=file:$HOME/Desktop/out.ogv
+Recent Urls[$e]=file:$HOME/Downloads/Telegram Desktop/1f16d207dc44de71ada296f0581577610a67ef16.mp4
 TimeFormat=1
 Volume=1
 
 [MainWindow]
-MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+HDMI1 eDP1 Height 1080=248
+HDMI1 eDP1 Width 1920=657
+HDMI1 eDP1 XPosition=1959
+HDMI1 eDP1 YPosition=89
+State=AAAA/wAAAAD9AAAAAAAAApEAAAChAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-eDP1 Height 1080=720
-eDP1 Width 1920=1280
-eDP1 Window-Maximized 1080x1920=true
-eDP1 XPosition=0
-eDP1 YPosition=56
 
-[file:///home/cele/Desktop/out.ogv]
+[file:///home/cele/Downloads/Telegram Desktop/1f16d207dc44de71ada296f0581577610a67ef16.mp4]
 Brightness=0
 Contrast=0
-Date=2020,10,18
+Date=2020,11,27
 Hue=0
 IsVideo=false
-Preferred Size=1920,960
+Preferred Size=100,30
 Saturation=0
-Subtitle=0

@@ -1,6 +1,6 @@
 [Layout]
-DisplayNames=
-LayoutList=us
+DisplayNames=,
+LayoutList=us,us
 LayoutLoopCount=-1
 Model=
 ResetOldOptions=false

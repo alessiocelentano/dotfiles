@@ -1,8 +1,0 @@
-[FileDialogSize]
-HDMI1 Height 1080=986
-HDMI1 Width 1920=576
-
-[KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Downloads/Untitled 1.odt,file:$HOME/Downloads/Untitled 1.odt
-Recent URLs[$e]=file:$HOME/Desktop/,file:$HOME/Downloads/
-detailViewIconSize=16

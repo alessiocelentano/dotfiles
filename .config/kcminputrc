@@ -1,8 +1,2 @@
 [$Version]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize
-
-[Mouse]
-XLbInptAccelProfileFlat=false
-XLbInptNaturalScroll=false
-XLbInptPointerAcceleration=0.4
-cursorTheme=Vimix-cursors
