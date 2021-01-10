@@ -1,4 +1,4 @@
-" Vundle
+"Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,6 +20,8 @@ Plugin 'preservim/nerdtree'
 Plugin 'dense-analysis/ale'
 Plugin 'vim-vdebug/vdebug'
 Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'chrisbra/csv.vim'
+Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 call vundle#end()
 
 " Highlight
@@ -37,7 +39,7 @@ map ; :FZF --exact $HOME<CR>
 map ,t :NERDTreeFind<CR>
 map ,c :NERDTreeToggle<CR>
 
-" Others
+" Misc
 filetype plugin indent on
 set encoding=utf-8
 set nu

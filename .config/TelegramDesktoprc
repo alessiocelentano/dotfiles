@@ -1,8 +1,0 @@
-[FileDialogSize]
-HDMI1 Height 1080=986
-HDMI1 Width 1920=576
-
-[KFileDialog Settings]
-Recent Files[$e]=photo_2020-10-11_19-42-47.jpg,file:$HOME/Downloads/photo_2020-11-27_15-38-42.jpg,file:$HOME/dev/vinylnewsbot/src/TelemnmlBot.session,file:$HOME/Downloads/Telegram Desktop/current.jpg,file:$HOME/Downloads/Telegram Desktop/photo_2020-10-11_19-42-47.jpg
-Recent URLs[$e]=file:$HOME/Downloads/Telegram Desktop/,file:$HOME/Desktop/,file:$HOME/,file:$HOME/.local/share/TelegramDesktop/,file:$HOME/Downloads/,file:$HOME/dev/vinylnewsbot/src/,file:$HOME/dev/rotomgram/src/
-detailViewIconSize=16
