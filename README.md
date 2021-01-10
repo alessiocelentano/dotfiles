@@ -1,6 +1,8 @@
 # Dotfiles
 My Bash/Vim dotfiles (work in progress)
 
+![Konsole screenshot](konsole_screenshot.png)
+
 ## Other dotfiles
 This is a list of old (not great) works:
 - [Colorful Material Dotfiles with floating bars (i3)](https://github.com/alessiocelentano/dotfiles/tree/c55f1c6aab7d66750df642ee391d804bfd002b5f) (2020/05)
