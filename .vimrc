@@ -1,4 +1,4 @@
-"Vundle
+" Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -21,15 +21,30 @@ Plugin 'dense-analysis/ale'
 Plugin 'vim-vdebug/vdebug'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'chrisbra/csv.vim'
-Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
+Plugin 'suan/vim-instant-markdown'
+Plugin 'joshdick/onedark.vim'
+Plugin 'ghifarit53/tokyonight-vim'
+Plugin 'kaicataldo/material.vim'
+Plugin 'lervag/vimtex'
+Plugin 'kyoz/purify', { 'rtp': 'vim' }
 call vundle#end()
 
 " Highlight
 syntax on
-colorscheme nord
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ }
+set termguicolors
+colorscheme purify
+
+" Tabs
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+autocmd Filetype c setlocal tabstop=8
+autocmd Filetype c setlocal softtabstop=8
+autocmd Filetype c setlocal shiftwidth=8
+autocmd Filetype cpp setlocal tabstop=8
+autocmd Filetype cpp setlocal softtabstop=8
+autocmd Filetype cpp setlocal shiftwidth=8
 
 " Fzf shortcuts
 let $FZF_DEFAULT_COMMAND = 'ag -u -g "" path $HOME'
