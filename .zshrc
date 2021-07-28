@@ -3,10 +3,22 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 CASE_SENSITIVE="true"
+ZSH_COLORIZE_STYLE="colorful"
+YSU_MESSAGE_POSITION="after"
 
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+    sudo
+    web-search
+    dirhistory
+    zsh_reload
+    archlinux
+    colorize
+    themes
+    you-should-use
+)
 
 alias pacman="pacman --color=always"
 alias htop="htop --highlight-changes --sort-key=PERCENT_MEM --tree --user"
