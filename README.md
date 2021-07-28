@@ -1,7 +1,7 @@
 # Dotfiles
 My Bash/Vim dotfiles (work in progress)
 
-![Konsole screenshot](konsole_screenshot.png)
+![Konsole screenshot](screenshot.png)
 
 ## Other dotfiles
 This is a list of old (not great) works:
