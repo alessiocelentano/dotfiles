@@ -1,5 +1,5 @@
 # Dotfiles
-My Bash/Vim dotfiles (work in progress)
+My dotfiles (Zsh, Vim)
 
 ![Konsole screenshot](screenshot.png)
 
