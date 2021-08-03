@@ -1,7 +1,7 @@
 # Dotfiles
-My dotfiles (Zsh, Vim)
+My Arch Linux dotfiles (Zsh, Vim)
 
-![Konsole screenshot](screenshot.png)
+![Konsole screenshot](images/screenshot.png)
 
 ## Other dotfiles
 This is a list of old (not great) works:

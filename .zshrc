@@ -4,7 +4,7 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
-ZSH_COLORIZE_STYLE="colorful"
+#ZSH_COLORIZE_STYLE="colorful"
 YSU_MESSAGE_POSITION="after"
 
 plugins=(
@@ -28,8 +28,7 @@ export ZSH="/home/cele/.oh-my-zsh"
 export LS_COLORS="no=37:di=92;1:*.py=93";
 export PS1="\[\e[1;36m\]\w $\[\e[m\] "
 export EDITOR="vim"
-
-fpath+=$HOME/.zsh/pure
+export LC_CTYPE=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 

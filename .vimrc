@@ -27,6 +27,7 @@ Plugin 'ghifarit53/tokyonight-vim'
 Plugin 'kaicataldo/material.vim'
 Plugin 'lervag/vimtex'
 Plugin 'kyoz/purify', { 'rtp': 'vim' }
+Plugin 'ryanoasis/vim-devicons'
 call vundle#end()
 
 " Highlight
@@ -56,7 +57,7 @@ map ,c :NERDTreeToggle<CR>
 
 " Misc
 filetype plugin indent on
-set encoding=utf-8
+set encoding=UTF-8
 set nu
 set clipboard=unnamedplus
 set laststatus=2
