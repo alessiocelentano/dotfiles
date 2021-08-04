@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=dark
+ColorScheme=MateriaDark
 Font=MesloLGS Nerd Font,10,-1,5,50,0,0,0,0,0
 LineSpacing=0
 UseFontLineChararacters=false
@@ -14,10 +14,11 @@ UseCustomCursorColor=false
 [General]
 Command=/bin/zsh
 DimWhenInactive=false
+Icon=org.xfce.terminal-settings
 Name=cele
 Parent=FALLBACK/
 TerminalCenter=true
-TerminalMargin=10
+TerminalMargin=12
 
 [Scrolling]
 HistoryMode=1
