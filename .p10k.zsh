@@ -836,8 +836,8 @@
 
   ################[ todo: todo items (https://github.com/todotxt/todo.txt-cli) ]################
   # Todo color.
-  typeset -g POWERLEVEL9K_TODO_FOREGROUND=0
-  typeset -g POWERLEVEL9K_TODO_BACKGROUND=8
+  typeset -g POWERLEVEL9K_TODO_FOREGROUND=7
+  typeset -g POWERLEVEL9K_TODO_BACKGROUND=1
   # Hide todo when the total number of tasks is zero.
   typeset -g POWERLEVEL9K_TODO_HIDE_ZERO_TOTAL=true
   # Hide todo when the number of tasks after filtering is zero.
