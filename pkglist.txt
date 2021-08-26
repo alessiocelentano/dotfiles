@@ -9,6 +9,7 @@ cowsay
 curl
 discord
 feh
+figlet
 firefox
 flameshot
 fzf
@@ -19,6 +20,7 @@ kvantum-qt5
 lolcat
 multilib-devel
 neofetch
+nvim
 papirus-icon-theme
 plasma
 plasma-wayland-session
