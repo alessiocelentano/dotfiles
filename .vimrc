@@ -28,6 +28,7 @@ Plugin 'kaicataldo/material.vim'
 Plugin 'lervag/vimtex'
 Plugin 'kyoz/purify', { 'rtp': 'vim' }
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 
 " Highlight

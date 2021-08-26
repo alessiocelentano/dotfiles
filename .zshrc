@@ -18,6 +18,7 @@ plugins=(
     colorize
     themes
     you-should-use
+    wakatime
 )
 
 alias pacman="pacman --color=always"
