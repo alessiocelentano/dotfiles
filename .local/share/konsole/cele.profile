@@ -2,12 +2,12 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=MateriaDark
-Font=MesloLGS Nerd Font,10,-1,5,50,0,0,0,0,0
+Font=FiraCode Nerd Font Mono,11,-1,5,50,0,0,0,0,0
 LineSpacing=0
 UseFontLineChararacters=false
 
 [Cursor Options]
-CursorShape=0
+CursorShape=1
 CustomCursorColor=126,255,70
 UseCustomCursorColor=false
 
@@ -18,7 +18,8 @@ Icon=org.xfce.terminal-settings
 Name=cele
 Parent=FALLBACK/
 TerminalCenter=true
-TerminalMargin=12
+TerminalColumns=80
+TerminalMargin=16
 
 [Scrolling]
 HistoryMode=1
@@ -26,3 +27,4 @@ ScrollBarPosition=2
 
 [Terminal Features]
 BlinkingCursorEnabled=true
+VerticalLine=false

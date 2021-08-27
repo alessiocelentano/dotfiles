@@ -4,7 +4,7 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
-#ZSH_COLORIZE_STYLE="colorful"
+ZSH_COLORIZE_STYLE="colorful"
 YSU_MESSAGE_POSITION="after"
 
 plugins=(
@@ -30,6 +30,7 @@ export LS_COLORS="no=37:di=92;1:*.py=93";
 export PS1="\[\e[1;36m\]\w $\[\e[m\] "
 export EDITOR="vim"
 export LC_CTYPE=en_US.UTF-8
+export PATH="$PATH :/home/cele/.local/share/gem/ruby/3.0.0/bin:/home/cele/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
 
