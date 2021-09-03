@@ -11,19 +11,40 @@ return require('packer').startup(function()
     use 'norcalli/nvim-colorizer.lua'
     use 'rktjmp/lush.nvim'
 
+    -- Cursor line
+    use 'yamatsum/nvim-cursorline'
+
     -- Completion
     use { 'ms-jpq/coq_nvim', branch = 'coq'}
     use { 'ms-jpq/coq.artifacts', branch= 'artifacts'}
-    use {'neoclide/coc.nvim', branch = 'release'}
 
-    -- Icons
-    use 'kyazdani42/nvim-web-devicons'
-    
     -- Debugger
     use 'mfussenegger/nvim-dap'
     use 'rcarriga/nvim-dap-ui'
     use 'theHamsta/nvim-dap-virtual-text'
 
     -- Statusline
-    use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
+    use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
+
+    -- Statusline plugins
+    use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
+    
+    -- Tabline
+    use { 'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'} }
+
+    -- Dashboard
+    use 'glepnir/dashboard-nvim'
+
+    -- Tree
+    use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
+
+    -- Icons
+    use 'kyazdani42/nvim-web-devicons'
+
+    -- Finder
+    use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
+    use 'liuchengxu/vim-clap'
+    
+    -- Events fixer
+    use { 'antoinemadec/FixCursorHold.nvim' }
 end)
