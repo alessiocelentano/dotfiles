@@ -25,13 +25,15 @@ alias pacman="pacman --color=always"
 alias htop="htop --highlight-changes --sort-key=PERCENT_MEM --tree --user"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-export ZSH="/home/cele/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export LS_COLORS="no=37:di=92;1:*.py=93";
 export PS1="\[\e[1;36m\]\w $\[\e[m\] "
 export EDITOR="vim"
 export LC_CTYPE=en_US.UTF-8
-export PATH="$PATH :/home/cele/.local/share/gem/ruby/3.0.0/bin:/home/cele/.local/bin"
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
 
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+

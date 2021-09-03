@@ -1,10 +1,2 @@
 [Desktop Entry]
 DefaultProfile=cele.profile
-
-[MainWindow]
-RestorePositionForNextInstance=false
-StatusBar=Disabled
-ToolBarsMovable=Disabled
-
-[TabBar]
-TabBarVisibility=AlwaysHideTabBar
