@@ -23,4 +23,4 @@ This is a list of old simple works (that's why this repo got so many stars, if y
 
 ## Gallery
 ![Konsole screenshot](images/konsole.png)
-![Vim screenshot](images/vim.png)
+![Vim screenshot](images/neovim.png)
