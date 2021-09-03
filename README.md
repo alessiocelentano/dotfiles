@@ -1,13 +1,17 @@
 # Dotfiles
-Arch Linux, KDE Plasma (and i3), Zsh and Vim.
+Arch Linux, KDE Plasma, Zsh and Neovim.
+
+Updating Neovim config.
+
+Soon i3 config.
 
 ## Installation
 ```
 cd $HOME
-git clone https://github.com/Nastybox/dotfiles
+git clone https://github.com/alessiocelentano/dotfiles
 mv dotfiles/.* ./
-pacman -S --needed - < pkglist.txt
-paru -S --needed - < pkglist-aur.txt
+pacman -S --needed - < pkg/pkglist.txt
+paru -S --needed - < pkg/pkglist-aur.txt
 ```
 
 ## Other dotfiles
