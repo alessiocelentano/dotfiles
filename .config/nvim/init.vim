@@ -33,12 +33,6 @@ let g:cursorhold_updatetime = 100
 let g:cursorline_timeout = 0
 " Requires coq_nvim
 let g:coq_settings = { 'auto_start': 'shut-up' }
- 
-
-" === Tree ===
-lua require'nvim-web-devicons'.get_icon(filename, extension, options)
-hi NvimTreeNormal guibg=bg
-hi NvimTreeEndOfBuffer guifg=bg guibg=bg
 
 
 " === Misc ===
@@ -60,4 +54,7 @@ lua require('treesitter')
 lua require('maps')
 lua require('telescope')
 lua require('dashboard')
+lua require('indent')
+lua require('diffview')
+lua require('scroll')
 lua tree = require('tree')

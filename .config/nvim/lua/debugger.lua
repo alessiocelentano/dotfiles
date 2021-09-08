@@ -76,3 +76,5 @@ require('dap')
     vim.fn.sign_define('DapBreakpoint', {text='', texthl='', linehl='', numhl=''})
 
 vim.g.dap_virtual_text = 'all frames'
+
+-- require("debugger-colorscheme").setup()

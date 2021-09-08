@@ -44,6 +44,18 @@ return require('packer').startup(function()
     -- Finder
     use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
     use 'liuchengxu/vim-clap'
+
+    -- Indent blankline
+    use "lukas-reineke/indent-blankline.nvim"
+
+    -- Git
+    use 'sindrets/diffview.nvim'
+
+    -- Scrollbar
+    use 'Xuyuanp/scrollbar.nvim'
+
+    -- Comments
+    use 'b3nj5m1n/kommentary'
     
     -- Events fixer
     use { 'antoinemadec/FixCursorHold.nvim' }
