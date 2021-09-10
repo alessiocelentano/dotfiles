@@ -1,0 +1,12 @@
+plugins=(
+    git
+    zsh-autosuggestions
+    sudo
+    web-search
+    dirhistory
+    zsh_reload
+    archlinux
+    colorize
+    themes
+    you-should-use
+)

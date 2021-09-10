@@ -66,7 +66,7 @@ require("dapui").setup({
     elements = {
       { id = "scopes", size = 1 },
     },
-    width = 60,
+    size = 60,
     position = "left",
   },
   windows = { indent = 1 },

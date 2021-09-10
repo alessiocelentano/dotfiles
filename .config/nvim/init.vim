@@ -1,17 +1,26 @@
-" === Highlight ===
-syntax on
-lua require('onedark').setup()
+" === Variables ===
+" Onedark
 lua vim.g.onedark_darker_diagnostics = false
 lua vim.g.onedark_diagnostics_undercurl = false
 lua vim.g.onedark_better_performance = 1
-lua require'colorizer'.setup()
+
+" Cursorline
+lua vim.g.cursorhold_updatetime = 100
+lua vim.g.cursorline_timeout = 0
+
+" COQ
+lua vim.g.coq_settings = { auto_start = 'shut-up' }
+
+
+" === Highlight ===
+syntax on
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 if (empty($TMUX))
-  if (has("nvim"))
+  if (has('nvim'))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   endif
-  if (has("termguicolors"))
+  if (has('termguicolors'))
     set termguicolors
   endif
 endif
@@ -28,21 +37,30 @@ set hlsearch
 set number
 set wildmode=longest,list
 hi EndOfBuffer guifg=bg
-" Requires nvim-cursorline
-let g:cursorhold_updatetime = 100
-let g:cursorline_timeout = 0
-" Requires coq_nvim
-let g:coq_settings = { 'auto_start': 'shut-up' }
 
 
 " === Misc ===
 set hidden
+set nobackup
+set nowritebackup
 set nocompatible
-set encoding=UTF-8
-set nu
-set clipboard+=unnamedplus
-set laststatus=2
 set autochdir
+set nu
+set encoding=UTF-8
+set cmdheight=2
+set updatetime=300
+set laststatus=2
+set signcolumn=number
+set shortmess+=c
+set clipboard+=unnamedplus
+
+
+" === Setup ===
+lua require('onedark').setup()
+lua require('colorizer').setup()
+lua require('lspconfig').pyright.setup{}
+lua require('lspconfig').sourcekit.setup{}
+lua require("trouble").setup{}
 
 
 " === External files === 
@@ -55,6 +73,7 @@ lua require('maps')
 lua require('telescope')
 lua require('dashboard')
 lua require('indent')
-lua require('diffview')
 lua require('scroll')
+lua require('todo-comments')
+lua require("trouble-config")
 lua tree = require('tree')

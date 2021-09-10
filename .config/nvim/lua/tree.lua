@@ -1,4 +1,4 @@
-vim.api.nvim_set_keymap('n', '<space><space>', '<cmd> lua tree.toggle()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<space><esc>', '<cmd> lua tree.toggle()<CR>', {noremap = true, silent = true})
 
 require'nvim-web-devicons'.get_icon(filename, extension, options)
 vim.cmd("hi NvimTreeNormal guibg=bg")

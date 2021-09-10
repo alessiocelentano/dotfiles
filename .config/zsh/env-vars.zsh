@@ -1,0 +1,10 @@
+export ZSH_THEME="powerlevel10k/powerlevel10k"
+export CASE_SENSITIVE="true"
+export ZSH_COLORIZE_STYLE="colorful"
+export YSU_MESSAGE_POSITION="after"
+export ZSH="$HOME/.oh-my-zsh"
+export LS_COLORS="no=37:di=92;1:*.py=93";
+export EDITOR="vim"
+export LC_CTYPE=en_US.UTF-8
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"

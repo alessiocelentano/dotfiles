@@ -11,7 +11,6 @@ map('n', '<esc>', ':noh<cr><esc>', opts)
 map('n', '<leader>x', '*``cgn', opts)
 map('n', '<leader>X', '#``cgn', opts)
 map('v', '<leader>cpy', '_<C-V>I#<esc>', opts)
-map('n', '<leader><leader>', '<cmd> lua tree.toggle()<CR>',  opts)
 
 -- Disable arrow keys
 map('n', '<Up>', '<Nop>',  opts)

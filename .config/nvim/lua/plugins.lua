@@ -10,13 +10,21 @@ return require('packer').startup(function()
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'norcalli/nvim-colorizer.lua'
     use 'rktjmp/lush.nvim'
+    use 'folke/lsp-colors.nvim'
 
     -- Cursor line
     use 'yamatsum/nvim-cursorline'
 
+    -- LSP
+    use { 'neovim/nvim-lspconfig' }
+
     -- Completion
     use { 'ms-jpq/coq_nvim', branch = 'coq'}
-    use { 'ms-jpq/coq.artifacts', branch= 'artifacts'}
+    use { 'ms-jpq/coq.artifacts', branch = 'artifacts'}
+
+    
+    -- Diagnostic
+    use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
 
     -- Debugger
     use 'mfussenegger/nvim-dap'
@@ -56,7 +64,8 @@ return require('packer').startup(function()
 
     -- Comments
     use 'b3nj5m1n/kommentary'
-    
+    use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
+
     -- Events fixer
     use { 'antoinemadec/FixCursorHold.nvim' }
 end)

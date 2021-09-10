@@ -2,37 +2,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-CASE_SENSITIVE="true"
-ZSH_COLORIZE_STYLE="colorful"
-YSU_MESSAGE_POSITION="after"
-
-plugins=(
-    git
-    zsh-autosuggestions
-    sudo
-    web-search
-    dirhistory
-    zsh_reload
-    archlinux
-    colorize
-    themes
-    you-should-use
-    wakatime
-)
-
-alias pacman="pacman --color=always"
-alias htop="htop --highlight-changes --sort-key=PERCENT_MEM --tree --user"
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-export ZSH="$HOME/.oh-my-zsh"
-export LS_COLORS="no=37:di=92;1:*.py=93";
-export PS1="\[\e[1;36m\]\w $\[\e[m\] "
-export EDITOR="vim"
-export LC_CTYPE=en_US.UTF-8
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
-
+source $ZDOTDIR/plugins.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/env-vars.zsh
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
