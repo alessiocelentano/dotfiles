@@ -1,8 +1,6 @@
 # Dotfiles
 Arch Linux, KDE Plasma, Zsh and Neovim.
 
-Updating Neovim config.
-
 Soon i3 config.
 
 ## Installation

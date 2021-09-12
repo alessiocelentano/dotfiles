@@ -12,9 +12,6 @@ return require('packer').startup(function()
     use 'rktjmp/lush.nvim'
     use 'folke/lsp-colors.nvim'
 
-    -- Cursor line
-    use 'yamatsum/nvim-cursorline'
-
     -- LSP
     use { 'neovim/nvim-lspconfig' }
 
@@ -59,8 +56,9 @@ return require('packer').startup(function()
     -- Git
     use 'sindrets/diffview.nvim'
 
-    -- Scrollbar
+    -- Scroll
     use 'Xuyuanp/scrollbar.nvim'
+    use 'karb94/neoscroll.nvim'
 
     -- Comments
     use 'b3nj5m1n/kommentary'

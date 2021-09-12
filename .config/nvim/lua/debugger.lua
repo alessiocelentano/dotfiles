@@ -1,11 +1,4 @@
-local map = vim.api.nvim_set_keymap
-local opts = {noremap = true, silent = true}
 local dap = require('dap')
-vim.g.mapleader = " "
-
-map('n', '<leader>d', ':lua require\'dap\'.continue()<CR>', opts)
-map('n', '<leader>b', ':lua require\'dap\'.toggle_breakpoint()<CR>', opts)
-map('n', '<leader>dr', ':lua require\'dap\'.repl.open()<CR>', opts)
 
 
 -- === Python Debugger Configuration ===
@@ -76,5 +69,3 @@ require('dap')
     vim.fn.sign_define('DapBreakpoint', {text='', texthl='', linehl='', numhl=''})
 
 vim.g.dap_virtual_text = 'all frames'
-
--- require("debugger-colorscheme").setup()
