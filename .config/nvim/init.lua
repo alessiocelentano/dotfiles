@@ -18,7 +18,6 @@ vim.g["NVIM_TUI_ENABLE_TRUE_COLOR"] = 1
 vim.opt.termguicolors = true
 
 
-
 -- === Editor ===
 vim.opt.autoindent = true
 vim.opt.smarttab = true
@@ -36,6 +35,7 @@ vim.opt.cursorline = true
 vim.opt.showmatch = true
 vim.opt.number = true
 vim.opt.wildmode = { longest = true, list = true }
+vim.cmd("hi EndOfBuffer guifg=bg") -- TODO: Fix this line
 
 
 -- === Misc ===
@@ -61,7 +61,7 @@ require("lspconfig").pyright.setup({})
 require("lspconfig").sourcekit.setup({})
 require("trouble").setup()
 require("neoscroll").setup()
-vim.cmd[[hi EndOfBuffer guifg=bg]] -- TODO: Fix this line
+require("toggleterm").setup({})
 
 
 -- === External files === 

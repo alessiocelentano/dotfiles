@@ -90,3 +90,8 @@ map("n", "<leader>d<leader>", "<cmd>Trouble lsp_document_diagnostics<cr>", opts)
 map("n", "<leader>l<leader>", "<cmd>Trouble loclist<cr>", opts)
 map("n", "<leader>q<leader>", "<cmd>Trouble quickfix<cr>", opts)
 map("n", "<leader>r<leader>", "<cmd>Trouble lsp_references<cr>", opts)
+
+
+-- === Terminal ===
+map("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
+map("n", "<leader>tr", "<cmd>TermExec cmd='python3 *.py'<cr>", opts)

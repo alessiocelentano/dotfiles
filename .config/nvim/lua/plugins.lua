@@ -19,7 +19,6 @@ return require('packer').startup(function()
     use { 'ms-jpq/coq_nvim', branch = 'coq'}
     use { 'ms-jpq/coq.artifacts', branch = 'artifacts'}
 
-    
     -- Diagnostic
     use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
 
@@ -36,6 +35,9 @@ return require('packer').startup(function()
     
     -- Tabline
     use { 'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'} }
+
+    -- Terminal integration
+    use {"akinsho/toggleterm.nvim"}
 
     -- Dashboard
     use 'glepnir/dashboard-nvim'
