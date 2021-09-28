@@ -55,7 +55,7 @@ require("dapui").setup({
     repl = "r",
   },
   sidebar = {
-    open_on_start = true,
+    open_on_start = false,
     elements = {
       { id = "scopes", size = 1 },
     },

@@ -4,9 +4,11 @@ vim.g.mapleader = " "
 
 
 -- === My config ===
--- Esc to Caps Lock
-vim.api.nvim_command('au VimEnter * silent! !setxkbmap -option caps:escape')
-vim.api.nvim_command('au VimLeave * silent! !setxkbmap -option')
+-- I have mapped Caps Lock as Esc, not here but in the settings of my
+-- keyboard because I also use it as i3wm modifier.
+-- You can use these two lines if you only want Esc on Caps Lock.
+--vim.api.nvim_command('au VimEnter * silent! !setxkbmap -option caps:escape')
+-- vim.api.nvim_command('au VimLeave * silent! !setxkbmap -option')
 
 -- Disable arrow keys
 map('n', '<Up>', '<Nop>',  opts)

@@ -5,6 +5,7 @@ fi
 source $ZDOTDIR/plugins.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/env-vars.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

@@ -1,0 +1,185 @@
+# Alessio Celentano Dotfiles
+
+# === VARIABLES ===
+set $mod3 Mod3
+set $smod3 Mod3+Shift
+set $cmod3 Mod3+Control
+set $scmod3 Mod3+Shift+Control
+
+set $mod4 $mod3
+set $smod4 $mod3+Shift
+set $cmod4 $mod3+Control
+set $scmod4 $mod3+Shift+Control
+
+# === DEFAULT COMMANDS ===
+# - Setted HJKL
+# - Edited $mod3+Q/A/Z* (impossible with touch typing)
+
+# Caps Lock
+floating_modifier $mod3
+
+# Set HJKL
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Focus commands
+bindsym $mod3+$left focus left
+bindsym $mod3+$down focus down
+bindsym $mod3+$up focus up
+bindsym $mod3+$right focus right
+
+# Move commands
+bindsym $smod3+$left move left
+bindsym $smod3+$down move down
+bindsym $smod3+$up move up
+bindsym $smod3+$right move right
+
+# Layouts
+bindsym $smod3+s layout stacking
+bindsym $mod3+w layout tabbed
+bindsym $mod3+e layout toggle split
+bindsym $mod3+semicolon split h
+bindsym $mod3+v split v
+
+# Workspaces
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9 
+set $ws10 10
+
+# Switch to workspace
+bindsym $mod3+1 workspace number $ws1
+bindsym $mod3+2 workspace number $ws2
+bindsym $mod3+3 workspace number $ws3
+bindsym $mod3+4 workspace number $ws4
+bindsym $mod3+5 workspace number $ws5
+bindsym $mod3+6 workspace number $ws6
+bindsym $mod3+7 workspace number $ws7
+bindsym $mod3+8 workspace number $ws8
+bindsym $mod3+9 workspace number $ws9
+bindsym $mod3+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $smod3+1 move container to workspace number $ws1
+bindsym $smod3+2 move container to workspace number $ws2
+bindsym $smod3+3 move container to workspace number $ws3
+bindsym $smod3+4 move container to workspace number $ws4
+bindsym $smod3+5 move container to workspace number $ws5
+bindsym $smod3+6 move container to workspace number $ws6
+bindsym $smod3+7 move container to workspace number $ws7
+bindsym $smod3+8 move container to workspace number $ws8
+bindsym $smod3+9 move container to workspace number $ws9
+bindsym $smod3+0 move container to workspace number $ws10
+
+# reload the configuration file
+bindsym $smod3+c reload
+
+# restart i3 inplace
+bindsym $smod3+r restart
+
+# exit from i3
+bindsym $smod3+e exit
+
+# Resize
+bindsym $mod3+r mode "resize"
+mode "resize" {
+        bindsym $left        resize shrink width 10 px
+        bindsym $down        resize grow height 10 px 
+        bindsym $up          resize shrink height 10 px
+        bindsym $right       resize grow width 10 px
+
+        bindsym Shift+$left        resize shrink width 40 px
+        bindsym Shift+$down        resize grow height 40 px 
+        bindsym Shift+$up          resize shrink height 40 px
+        bindsym Shift+$right       resize grow width 40 px
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod3+r mode "default"
+}
+
+# Font
+font pango: Fura 12
+
+# Borders
+for_window [class="^.*"] border pixel 0
+for_window [title="^.*"] border pixel 0
+# client.focused 		#ffffff #ffffff #ffffff #ffffff	#ffffff
+# client.focused_inactive #212b30 #212b30 #212b30 #212b30 #212b30
+# client.unfocused 	#212b30 #212b30 #212b30 #212b30 #212b30
+# client.urgent 		#212b30 #212b30 #212b30 #212b30 #212b30
+
+# Gaps
+gaps inner 15
+gaps outer 15
+gaps top 5
+gaps right 5
+gaps bottom 5
+gaps left 5
+
+# Scratchpad
+bindsym $smod3+space move scratchpad
+bindsym $mod3+space scratchpad show
+
+# Other i3 commands
+bindsym $mod3+z kill
+bindsym $mod3+d exec dmenu_run
+bindsym $smod3+f fullscreen toggle
+bindsym $mod3+f floating toggle
+
+
+# === LOAD GRAPHIC ===
+exec picom &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec feh --bg-scale ~/images/wallpapers/wallpaper-arch.png
+
+
+# === SHORTCUTS ===
+
+# General
+bindsym $mod3+Return exec alacritty
+bindsym $mod3+t exec telegram-desktop
+bindsym $mod3+s exec spotify
+bindsym $mod3+b exec chromium
+bindsym $mod3+Escape exec xscreensaver-command -activate
+bindsym $smod3+quote [class=.] kill
+
+# Screenshot and screen record
+bindsym --release Print exec xfce4-screenshooter
+bindsym --release Shift+Print exec simplescreenrecorder
+
+# Media volume controls
+bindsym $mod3+F10 exec pamixer --toggle-mute
+bindsym $mod3+F11 exec pamixer --decrease 5
+bindsym $mod3+F12 exec pamixer --increase 5
+bindsym XF86AudioMute exec pamixer --toggle-mute
+bindsym XF86AudioLowerVolume exec pamixer --decrease 5
+bindsym XF86AudioRaiseVolume exec pamixer --increase 5
+
+# Spotify
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym $mod3+slash exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym $mod3+comma exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym $mod3+period exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# === MISC ===
+
+# No mouse
+focus_follows_mouse no
+
+# Floating windows
+for_window [title="SimpleScreenRecorder"] floating enable
+
+# Load Layouts
+# bindsym $mod3+n exec "i3-msg 'workspace 1; append_layout /home/cele/.config/i3/main.json'"; exec alacritty; exec vivaldi-stable; exec telegram-desktop; exec alacritty --title htop --command htop
+

@@ -1,9 +1,7 @@
-bitwarden-bin
 chroma-bin
-mailspring
 nerd-fonts-complete
+polybar
 snapd
-spotify-snap
 todotxt
 topgrade
 ttf-ms-fonts
