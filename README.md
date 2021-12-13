@@ -1,7 +1,5 @@
 # Dotfiles
-Arch Linux, KDE Plasma, Zsh and Neovim.
-
-Soon i3 config.
+Arch Linux, Gnome 41, Zsh and Neovim.
 
 ## Installation
 ```
@@ -19,6 +17,10 @@ This is a list of old simple works (that's why this repo got so many stars, if y
 - [Blue Material/Nord (i3)](https://github.com/alessiocelentano/dotfiles/tree/def757afcd4825a6bbf80ef2c7d5510ce4d3f60c) [2020/07]
 - [Everything is the background (Plasma+herbstluftwm)](https://github.com/alessiocelentano/dotfiles/tree/85871d2d72622990f36c94b5b5c7adff2dd6aed7) [2020/11]
 
+## TODO
+- Tidy up this mess;
+- Add an i3 session;
+- Find time to do the two things above.
+
 ## Gallery
-![Konsole screenshot](images/konsole.png)
-![Vim screenshot](images/neovim.png)
+![Terminal screenshot](images/terminal.png)

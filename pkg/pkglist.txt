@@ -32,6 +32,7 @@ sl
 the_silver_searcher
 thunderbird
 trash-cli
+ttf-hack
 unrar
 vim
 vim-plugins
