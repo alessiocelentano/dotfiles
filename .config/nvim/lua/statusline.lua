@@ -1,40 +1,29 @@
-local gps = require("nvim-gps")
-require("nvim-gps").setup({
-	icons = {
-		["class-name"] = ' ',
-		["function-name"] = ' ',
-		["method-name"] = ' '
-	},
-	languages = { },
-	separator = ' > ',
-})
-
-
-require('lualine').setup{
+require('lualine').setup {
   options = {
-    theme = 'onedark',
-    section_separators = '',
-    component_separators = ''
+    icons_enabled = true,
+    theme = 'auto',
+    component_separators = { left = '|', right = '|'},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {},
+    always_divide_middle = true,
+    globalstatus = false,
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff'},
-    lualine_c = {
-      'filename', {
-        gps.get_location,
-        condition = gps.is_available
-      }
-    },
-    lualine_x = {'encoding'},
-    lualine_y = {
-      'filetype', {
-        'diagnostics',
-         sources = {'coc'},
-         symbols = {error = ' ', warn = ' ', info = ' '};
-         color_error = '#ec5f67',
-         color_warn = '#ECBE7B',
-         color_info = '#008080'
-      }
-    }
-  }
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  extensions = {}
 }

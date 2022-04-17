@@ -1,15 +1,7 @@
 -- === Variables ===
--- Onedark
-vim.g.onedark_darker_diagnostics = false
-vim.g.onedark_diagnostics_undercurl = false
-vim.g.onedark_better_performance = 1
-
 -- Cursorline
 vim.g.cursorhold_updatetime = 100
 vim.g.cursorline_timeout = 0
-
--- COQ
-vim.g.coq_settings = { auto_start = "shut-up" }
 
 
 -- === Highlight ===
@@ -35,7 +27,6 @@ vim.opt.cursorline = true
 vim.opt.showmatch = true
 vim.opt.number = true
 vim.opt.wildmode = { longest = true, list = true }
-vim.cmd("hi EndOfBuffer guifg=bg") -- TODO: Fix this line
 
 
 -- === Misc ===
@@ -54,24 +45,20 @@ vim.opt.shortmess:append("c")
 vim.opt.clipboard:append("unnamedplus")
 
 
--- === Setup ===
-require("onedark").setup()
+-- === Require ===
+require("maps")
+require("plugins")
+require("colorscheme")
 require("colorizer").setup()
-require("lspconfig").pyright.setup({})
-require("lspconfig").sourcekit.setup({})
+require("treesitter")
 require("trouble").setup()
+require("lspconfig").pyright.setup{}
+require("statusline")
 require("neoscroll").setup()
+require("scroll")
 require("toggleterm").setup({})
-
-
--- === External files === 
 require("barbar")
 require("dashboard")
 require("debugger")
 require("indent")
-require("maps")
-require("plugins")
-require("scroll")
-require("statusline")
-require("treesitter")
 tree = require("tree")
