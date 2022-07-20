@@ -1,7 +1,0 @@
-chroma-bin
-nerd-fonts-complete
-polybar
-snapd
-todotxt
-topgrade
-ttf-ms-fonts
