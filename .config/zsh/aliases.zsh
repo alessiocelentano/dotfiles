@@ -1,8 +1,0 @@
-alias pacman="pacman --color=always"
-alias htop="htop --highlight-changes --sort-key=PERCENT_MEM --tree --user"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias rm="trash-put"
-alias td="trash-empty"
-alias tls="trash-list"
-alias tu="trash-restore"
-alias trm="trash-rm"
